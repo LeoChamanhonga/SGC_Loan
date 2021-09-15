@@ -6,31 +6,31 @@
 	  <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-         <strong> <h4 class="modal-title" align="center">Insert Into Wallet</h4></strong></div>
+         <strong> <h4 class="modal-title" align="center">Inserir na carteira</h4></strong></div>
         <div class="modal-body">
 		    <form class="form-horizontal" method="post" enctype="multipart/form-data">
 			 <div class="box-body">
 			
 			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Amount</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Valor</label>
                   <div class="col-sm-10">
                   <input name="amt" type="number" class="form-control" placeholder="Amount" required>
                   </div>
                   </div>
 				  
 				   <div class="form-group">
-                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Description</label>
+                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Descriçao</label>
                   	<div class="col-sm-10">
 					<textarea name="desc"  class="form-control" rows="4" cols="80"></textarea>
            		</div>
 				</div>
 				
 				<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Wallet Type</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Tipo de Carteira</label>
                   <div class="col-sm-10">
 				<select name="wtype"  class="form-control" required>
-										<option value="debit">debit</option>
-										<option value="credit">credit</option>
+										<option value="debit">debito</option>
+										<option value="credit">credito</option>
 										</select>
 										</div>
 										</div>
@@ -40,8 +40,8 @@
 
 		<hr>
 		<div align="right">
-  		 <button type="submit" class="btn btn-success btn-flat" name="save"><i class="fa fa-save"></i>&nbsp;Save</button>
-		<button type="button" class="btn btn-danger btn-flat" data-dismiss="modal">&nbsp;Close</button>
+  		 <button type="submit" class="btn btn-success btn-flat" name="save"><i class="fa fa-save"></i>&nbsp;Gravar</button>
+		<button type="button" class="btn btn-danger btn-flat" data-dismiss="modal">&nbsp;Fechar</button>
 <?php
 if(isset($_POST['save']))
 {
@@ -62,7 +62,7 @@ if(isset($_POST['save']))
 		$insert1 = mysqli_query($link, "INSERT INTO twallet VALUES('','$tid','$amt')") or die (mysqli_error($link));
 		$insert2 = mysqli_query($link, "INSERT INTO mywallet VALUES('','$tid','NIL','$amt','$desc','$wtype',NOW())") or die (mysqli_error($link));
 
-		echo "<script>alert('You have successfully added New Payment!'); </script>";
+		echo "<script>alert('Adcionou pagamento com sucesso!'); </script>";
 		echo "<script>window.location='mywallet.php?tid=".$_SESSION['tid']."'; </script>";
 		}
 		else{
@@ -73,11 +73,11 @@ if(isset($_POST['save']))
 		$insert1 = mysqli_query($link, "INSERT INTO mywallet VALUES('','$tid','NIL','$amt','$desc','$wtype',NOW())") or die (mysqli_error($link));
 		if(!($update3 && $insert1))
 		{
-		echo "<script>alert('Record not inserted!....Please try again later!!'); </script>";
+		echo "<script>alert('Erro ao inserir!....Tente novamente!!'); </script>";
 		echo "<script>window.location='mywallet.php?tid=".$_SESSION['tid']."'; </script>";
 		}
 		else{
-		echo "<script>alert('You have successfully added New Payment!'); </script>";
+		echo "<script>alert('Adcionou pagamento com sucesso!'); </script>";
 		echo "<script>window.location='mywallet.php?tid=".$_SESSION['tid']."'; </script>";
 		}
 		}
@@ -93,18 +93,18 @@ if(isset($_POST['save']))
 		$insert = mysqli_query($link, "INSERT INTO mywallet VALUES('','$tid','NIL','$amt','$desc','$wtype',NOW())") or die (mysqli_error($link));
 		if(!($update && $insert))
 		{
-		echo "<script>alert('Fund Not Credited.....Please try again later!'); </script>";
+		echo "<script>alert('Valor nao creditado.....Please try again later!'); </script>";
 		echo "<script>window.location='mywallet.php?tid=".$_SESSION['tid']."'; </script>";
 		}
 		else{
-		echo "<script>alert('Your Fund has been credited successfully!'); </script>";
+		echo "<script>alert('Valor Creditado com sucesso!'); </script>";
 		echo "<script>window.location='mywallet.php?tid=".$_SESSION['tid']."'; </script>";
 		}
 		}
 		}
 	}catch(UnexpectedValueException $ex)
 	{
-		echo "<script>alert('Invalid Amount Entered!!'); </script>";
+		echo "<script>alert('Montabde invalido!!'); </script>";
 	}
 }
 ?>
@@ -126,30 +126,30 @@ if(isset($_POST['save']))
 	  <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-         <strong> <h4 class="modal-title" align="center">Money Transfer</h4></strong></div>
+         <strong> <h4 class="modal-title" align="center">Transferencia de valor</h4></strong></div>
         <div class="modal-body">
 		    <form class="form-horizontal" method="post" enctype="multipart/form-data">
 			 <div class="box-body">
 			
 			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Amount</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Valor</label>
                   <div class="col-sm-10">
-                  <input name="amount" type="number" class="form-control" placeholder="Amount" required>
+                  <input name="amount" type="number" class="form-control" placeholder="Valor" required>
                   </div>
                   </div>
 				  
 				   <div class="form-group">
-                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Description</label>
+                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Descriçao</label>
                   	<div class="col-sm-10">
 					<textarea name="desc"  class="form-control" rows="4" cols="80"></textarea>
            		</div>
 				</div>
 				
 				<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Staff</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Funcionario</label>
                   <div class="col-sm-10">
 				<select name="transfer_to"  class="form-control" required style="width:100%">
-				<option value="" selected="selected" required>Select Staff to Transfer to</option>
+				<option value="" selected="selected" required>Selecione func. para transferir</option>
 				<?php
 				$get = mysqli_query($link, "SELECT * FROM user WHERE id != '$tid'") or die (mysqli_error($link));
 				while($rows = mysqli_fetch_array($get))
@@ -167,7 +167,7 @@ if(isset($_POST['save']))
 		
 		<hr>
 		<div align="right">
-  		 <button type="submit" class="btn btn-success btn-flat" name="transfer"><i class="fa fa-save"></i>&nbsp;Transfer</button>
+  		 <button type="submit" class="btn btn-success btn-flat" name="transfer"><i class="fa fa-save"></i>&nbsp;Transferir</button>
 		<button type="button" class="btn btn-danger btn-flat" data-dismiss="modal">&nbsp;Close</button>
         </div>
 <?php
