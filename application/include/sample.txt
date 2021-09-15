@@ -1,0 +1,134 @@
+<div class="box-body">
+
+			<div class="form-group">
+				<label for="" class="col-sm-2 control-label" style="color:#009900">Username:</label>
+                <div class="col-sm-10">
+                <select name="tide"  class="form-control select2" required>
+					<option selected>Select Employee Username Here</option>
+					
+					<?php
+					$search_user = mysqli_query($link, "SELECT * FROM user WHERE id != '".$_SESSION['tid']."'") or die ("Error: " . mysqli_error($link));
+					while($get_users = mysqli_fetch_array($search_user))
+					{
+					?>		
+					<option value="<?php echo $get_users['id']; ?>"><?php echo $get_users['username']; ?></option>
+					<?php } ?>
+					
+				</select>
+                </div>			
+            </div>
+			<div class="form-group">
+			<hr><hr>
+			<div>
+			
+			 <table id="example1" class="table">
+			 <thead>
+                <tr>
+                  <th>S/No.</th>
+                  <th>Module Name</th>
+				  <th>Create</th>
+                  <th>Read</th>
+				  <th>Update</th>
+                  <th>Delete</th>
+                 </tr>
+                </thead>
+             <tbody>
+<?php
+$search = mysqli_query($link, "SELECT * FROM emp_permission") or die (mysqli_error($link));
+while($have = mysqli_fetch_array($search))
+{
+	$idme= $have['id'];
+?>
+                <tr>
+				   <td><?php echo $idme; ?><input id="optionsCheckbox" class="uniform_on" name="selector[]" type="hidden" value="<?php echo $idme; ?>" checked></td>
+                   <td><select name="module[]"  class="form-control select2" required>
+					<option value="<?php echo $have['module_name']; ?>"><?php echo $have['module_name']; ?></option>
+					<option value="Email_T">Email Template</option>
+					<option value="Borrowers">Borrower Details</option>
+					<option value="MyWallet">Employee Wallet</option>
+					<option value="Loan">Loan Details</option>
+					<option value="Message">Internal Message</option>
+					<option value="Missed_P">Missed Payment</option>
+					<option value="Payment">Payment</option>
+					<option value="Employee">Employee Details</option>
+					<option value="Module_P">Module Permission</option>
+					<option value="Savings">Savings Account</option>
+					<option value="General_S">General Settings</option>
+				   </td>
+				   <td><input id="optionsCheckbox" class="checkbox" name="pcreate[]" type="checkbox" value="<?php echo ($have['pcreate'] == "") ? 1 : $have['pcreate']; ?>" <?php echo ($have['pcreate'] == "") ? '' : 'checked'; ?>></td>
+				   <td><input id="optionsCheckbox" class="checkbox" name="pread[]" type="checkbox" value="<?php echo ($have['pread'] == "") ? 1 : $have['pread']; ?>" <?php echo ($have['pread'] == "") ? '' : 'checked'; ?>></td>
+				   <td><input id="optionsCheckbox" class="checkbox" name="pupdate[]" type="checkbox" value="<?php echo ($have['pupdate'] == "") ? 1 : $have['pupdate']; ?>" <?php echo ($have['pupdate'] == "") ? '' : 'checked'; ?>></td>
+				   <td><input id="optionsCheckbox" class="checkbox" name="pdelete[]" type="checkbox" value="<?php echo ($have['pdelete'] == "") ? 1 : $have['pdelete']; ?>" <?php echo ($have['pdelete'] == "") ? '' : 'checked'; ?>></td>
+                 </tr>
+<?php } ?>
+			 </tbody>
+             </table> 
+			 
+<?php
+$searchrow = mysqli_query($link, "SELECT * FROM emp_permission") or die (mysqli_error($link));
+$get_row = mysqli_num_rows($searchrow);
+if($get_row == "11")
+{
+?>			 
+			
+<?php 
+}
+else{
+?>
+			<div align="left">
+              <div class="box-footer">
+                <button type="submit" class="btn btn-success btn-flat" name="add_perm"><i class="fa fa-plus">&nbsp;Add Row</i></button>
+              </div>
+			</div>
+<?php } ?>
+
+<?php
+if(isset($_POST['add_perm']))
+{
+$id = $_GET['id'];
+$insert = mysqli_query($link, "INSERT INTO emp_permission(id,tid,module_name,pcreate,pread,pupdate,pdelete) VALUES('','','','','','','')") or die ("Error: " . mysqli_error($link));
+if(!$insert)
+{
+echo "<script>alert('Unable to add row!!!'); </script>";
+echo "<script>window.location='add_permission.php?id=".$_SESSION['tid']."&&mid=".base64_encode("413")."'; </script>";
+}
+else{
+echo "<script>window.location='add_permission.php?id=".$_SESSION['tid']."&&mid=".base64_encode("413")."'; </script>";
+}
+}
+?>
+
+		<div align="right">
+            <div class="box-footer">
+				<button type="submit" class="btn btn-info btn-flat" name="save"><i class="fa fa-save">&nbsp;Save Module</i></button>
+			</div>
+		</div>
+
+<?php
+if(isset($_POST['save']))
+{
+//$id = $_POST['selector'];
+$tide = mysqli_real_escape_string($link, $_POST['tide'][$i]);
+$i = 0;
+foreach($_POST['selector'] as $s)
+{
+$module = mysqli_real_escape_string($link, $_POST['module'][$i]);
+$pcreate = (isset($_POST['pcreate'][$i]) && ($_POST['pcreate'][$i] == '1'))  ? 1 : 0;
+$pread = (isset($_POST['pread'][$i]) && ($_POST['pread'][$i] == '1'))  ? 1 : 0;
+$pupdate = (isset($_POST['pupdate'][$i]) && ($_POST['pupdate'][$i] == '1'))  ? 1 : 0;
+$pdelete = (isset($_POST['pdelete'][$i]) && ($_POST['pdelete'][$i] == '1'))  ? 1 : 0;
+
+$update_sel = mysqli_query($link, "UPDATE emp_permission SET tid = '$tide', module_name = '$module', pcreate = '$pcreate',  pread = '$pread',pupdate ='$pupdate', pdelete = '$pdelete' WHERE id = '$s'") or die ("Error: " . mysqli_error($link));
+$i++;
+if(!$update_sel)
+{
+echo "<script>alert('Record not inserted.....Please try again later!'); </script>";
+}
+else{
+echo "<script>alert('Permission Added Successfully!!'); </script>";
+echo "<script>window.location='add_permission.php?id=".$_SESSION['tid']."&&mid=".base64_encode("413")."'; </script>";
+}
+}
+}
+?>
+</div>	

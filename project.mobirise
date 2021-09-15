@@ -1,0 +1,1268 @@
+{
+  "settings": {
+    "currentPage": "index.html",
+    "versionFirst": "3.8.3",
+    "uniqCompNum": 39,
+    "versionPublish": "3.8.3",
+    "name": "DonationPeer",
+    "theme": {
+      "name": "default",
+      "title": "Mobirise",
+      "styling": {}
+    },
+    "favicon": "assets/images/pay-128x128-58.png",
+    "noImageResize": "",
+    "cookiesAlert": "",
+    "publishType": "local",
+    "publishPath": "file:///C:/wamp/www/KonstantPay"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Donation Exchange Platform",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_inherit": "dropdown-menu",
+          "_tags": [
+            "Theme"
+          ],
+          "_styles": {
+            ".hide-buttons [data-button]": {
+              "display": "none !important"
+            },
+            ".navbar-brand a": {},
+            ".nav .link, .dropdown-item": {
+              "font-size": "1.2em",
+              "color": "#ffffff",
+              "googleLink": "https://fonts.googleapis.com/css?family=Montserrat:400,700",
+              "font-family": "'Montserrat', sans-serif"
+            },
+            ".navbar, .dropdown-menu": {
+              "background": "#28324e"
+            },
+            ".dropdown-menu .dropdown-toggle[aria-expanded=\"true\"], .dropdown-menu a:hover, .dropdown-menu a:focus": {
+              "background": "#212941"
+            },
+            ".navbar-toggler": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "dropdown-menu-2btn",
+          "_anchor": "dropdown-menu-2btn-0",
+          "_params": {
+            "bgColor": "#28324e",
+            "fontSize": "1.2",
+            "fontName": {
+              "name": "Montserrat",
+              "url": "https://fonts.googleapis.com/css?family=Montserrat:400,700",
+              "css": "'Montserrat', sans-serif"
+            },
+            "fontColor": "#ffffff",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": false
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "assets/images/pay-128x128-99.png",
+              "class": "",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com",
+              "title": "",
+              "linkInNewWindow": false
+            }
+          },
+          "brand": "<a class=\"text-white\" data-app-selector=\".navbar-brand a\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Konstant Pay</a>",
+          "items": "<li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\"><p>MENU</p></a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html\">Home</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"btc.html\">BTC</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"process.html\" aria-expanded=\"false\">Donation Process</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"about.html\">About us</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-info\" href=\"pages/dir/login.html\" target=\"_blank\">LOGIN</a></li>"
+        },
+        {
+          "_afterNavbarItem": ".mbr-section > .mbr-box__magnet",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "slider",
+          "_params": {
+            "autoplay": true,
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "slides": [
+              {
+                "active": true,
+                "image": "assets/images/donate3-2000x708-19.jpg",
+                "contentAlign": "center",
+                "overlay": true,
+                "showTitle": true,
+                "title": "KonstantPay Platform",
+                "showText": false,
+                "text": "Develop fully responsive, mobile-optimized websites that look amazing on any devices and browsers. Preview how your website will appear on phones, tablets and desktops directly in the visual editor.",
+                "showButtons": true,
+                "buttons": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"pages/dir/register.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">REGISTER NOW</a> "
+              },
+              {
+                "active": false,
+                "image": "assets/images/team1-2000x1388-78.jpg",
+                "contentAlign": "center",
+                "overlay": true,
+                "showTitle": true,
+                "title": "Konstant Pay Platform",
+                "showText": true,
+                "text": "A global donation platform to fulfill your dream - Both Local Currency &amp; Cryptho-currency (BTC)",
+                "showButtons": true,
+                "buttons": " <a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"../pages/dir/login.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">LOGIN NOW</a>"
+              }
+            ],
+            "fullScreen": true,
+            "bgColor": "#ffffff",
+            "showBullets": true
+          },
+          "_anchor": "slider-2",
+          "articleLayout": false
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-4",
+          "title": "KONSTANT PAY PROCESS",
+          "_params": {
+            "showMeta": false
+          },
+          "meta": "",
+          "_styles": {
+            "H3": {
+              "text-align": "center",
+              "color": "#28324e",
+              "font-family": "'Oswald', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Oswald:400,300,700"
+            }
+          }
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "features1",
+          "_anchor": "features1-6",
+          "_params": {
+            "paddingTop": "1",
+            "paddingBottom": "1",
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#fff",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showHeader": false,
+            "showSubheader": false,
+            "columns": 4,
+            "showImages": true,
+            "showTitles": true,
+            "showCaptions": true,
+            "showButtons": false
+          },
+          "headerAlign": "left",
+          "header": "DROP-DEAD EASY WEBSITE MAKER",
+          "subheader": "By John Smith posted July 30, 2015",
+          "media1": {
+            "image": {
+              "active": true,
+              "src": "assets/images/1-600x600-27.png",
+              "class": "mbr-figure__img",
+              "width": 600,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title1": "Register",
+          "caption1": "Complete online registration form with full details, contact number in international format (+1213789098), a valid and accessible email account then wait for email confirmation link in your email account. Your Donation hub account is now confirmed and you can proceed to login with username and password chosen during registration to access your newly created account.",
+          "button1": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\" data-toolbar=\"-mbrBtnMove\"></a>",
+          "media2": {
+            "image": {
+              "active": true,
+              "src": "assets/images/2-600x600-69.png",
+              "class": "mbr-figure__img",
+              "width": 600,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title2": "Add Payment Options",
+          "caption2": "After confirming your newly registered account, continue to login and complete your profile including your fund processing options this includes local bank transfer, ATM deposits, PayPal, Bitcoin address/account, neteller, Mobile Money and/or any other fund processor accepted in the system. Adding a payment processor will speed up the process to help you receive donations from other participants in real time.",
+          "button2": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\" data-toolbar=\"-mbrBtnMove\"></a>",
+          "media3": {
+            "image": {
+              "active": true,
+              "src": "assets/images/3-600x600-92.png",
+              "class": "mbr-figure__img",
+              "width": 600,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title3": "Donation schedule",
+          "caption3": "Once you’re in your user dashboard, familiarize yourself with your account. We have two donation options (Instant and Scheduled donations) available for short and long term donation, choose a donation recipient, amount and the option of donation transfer on both donation pages; you may split or make a full donation of the amount displayed to you and proceed to obtain recipient details. Get in touch with the receiver to make fast possible donation payment available and once funds is transfer or send, go to your outgoing donation and click paid once fund is paid, then recipient will be able to confirm your donation on other end once fund is received in his/her account.",
+          "button3": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\" data-toolbar=\"-mbrBtnMove\"></a>",
+          "media4": {
+            "image": {
+              "active": true,
+              "src": "assets/images/4-600x600-85.png",
+              "class": "mbr-figure__img",
+              "width": 600,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title4": "Receive Donation &amp; Incentives",
+          "caption4": "Once you make a donation of $35 or more, you’re scheduled automatically to receive a donation from other participants on a scheduled date (incoming donation) while a percentage of your donation will be held in the system for recommitting, maintain and balance the donation amongst participants. Learn more about recommitment and percentage help on process page. ",
+          "button4": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\" data-toolbar=\"-mbrBtnMove\"></a>",
+          "media5": {
+            "image": {
+              "active": true,
+              "src": "images/blocks.png",
+              "class": "mbr-figure__img",
+              "width": 600
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title5": "TRENDY WEBSITE BLOCKS",
+          "caption5": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+          "button5": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\">LEARN MORE</a>",
+          "media6": {
+            "image": {
+              "active": true,
+              "src": "images/host.png",
+              "class": "mbr-figure__img",
+              "width": 600
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title6": "HOST ANYWHERE",
+          "caption6": "Publish your website to a local drive, FTP or host on Amazon S3, Google Drive, Github. Don't limit yourself to just one platform or service provider.",
+          "button6": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\">LEARN MORE</a>",
+          "_styles": {
+            "P": {
+              "text-align": "center",
+              "color": "#000000"
+            },
+            ".mbr-section__col .mbr-header__text": {
+              "color": "#28324e",
+              "font-size": "20px"
+            }
+          }
+        },
+        {
+          "_styles": {
+            ".mbr-header .mbr-header__text": {
+              "text-align": "center"
+            },
+            ".mbr-header .mbr-header__subtext": {
+              "text-align": "center"
+            },
+            ".mbr-header .mbr-header__text SPAN": {
+              "font-family": "'Bitter', serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Bitter:400,700",
+              "color": "#ffffff"
+            },
+            ".mbr-article P": {
+              "color": "#ffffff"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "msg-box3",
+          "_anchor": "msg-box3-a",
+          "_params": {
+            "showCaption": true,
+            "paddingTop": "1",
+            "paddingBottom": "1",
+            "showTitle": true,
+            "showText": true,
+            "showButton": true,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#475577",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showMeta": false,
+            "darkBackground": false
+          },
+          "title": "<span style=\"font-weight: normal;\">Testimonials</span>",
+          "meta": "By John Smith posted July 30, 2015",
+          "text": "<p>My name is Betty,i live in USA and I joined Donation Hub on core aim to share with the world I had $200 to spend yesterday. Thanks very much for this opportunity. I am happy with this platform and am so fond of the multiple –currency options because I prefer to donate with bitcoins.<br></p>",
+          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"#\" data-toolbar=\"-mbrBtnMove\">Betty Stone</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts1",
+          "_anchor": "contacts1-b",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#28324e",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#3C3C3C"
+          },
+          "logo": {
+            "image": {
+              "src": "assets/images/pay1-265x132-94.jpg",
+              "class": "mbr-contacts__img mbr-contacts__img--left",
+              "width": 265,
+              "active": true,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-contacts1",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "text1": "<b>ABOUT US</b><br>Konstant Pay<br><span style=\"line-height: 1.7em;\">A worldwide channel to connect participants to share donations and receive incentives in return.</span><br><span style=\"line-height: 1.7em;\">A group of ordinary people, selflessly helping each other.&nbsp;</span><br>",
+          "text2": "<strong>CONTACTS</strong><br>\nEmail: support@konstantpay.com<br>\nPhone 1: +234 (0) 810 175 08<span style=\"line-height: 25.5px;\">45</span><br>\nPhone 2: +234 (0) 803 352 7716<br>Phone 2: +234 (0) 813 159 2018<br>",
+          "text3": "<p class=\"mbr-contacts__text\"><strong>LINKS</strong></p><ul class=\"mbr-contacts__list\"><li><a href=\"https://blockchain.info/\" target=\"_blank\" class=\"text-white\">Blockchain</a><a class=\"mbr-contacts__link text-gray\" href=\"https://mobirise.com/\"></a></li><li><a href=\"#\" class=\"text-white\">Bank Transfer</a></li><li><a href=\"#\" class=\"text-white\">Local Transfer</a></li></ul>",
+          "_styles": {
+            "P": {
+              "color": "#ffffff",
+              "font-size": "15px"
+            }
+          }
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "footer1",
+          "_anchor": "footer1-c",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#475577",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright (c) 2017 Konstant Pay. &nbsp;All Right Reserved.",
+          "_styles": {
+            "P": {
+              "color": "#ffffff"
+            }
+          }
+        }
+      ]
+    },
+    "btc.html": {
+      "settings": {
+        "title": "Donation Exchange Platform",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_inherit": "dropdown-menu",
+          "_tags": [
+            "Theme"
+          ],
+          "_styles": {
+            ".hide-buttons [data-button]": {
+              "display": "none !important"
+            },
+            ".navbar-brand a": {},
+            ".nav .link, .dropdown-item": {
+              "font-size": "1.2em",
+              "color": "#ffffff",
+              "googleLink": "https://fonts.googleapis.com/css?family=Oswald:400,300,700",
+              "font-family": "'Oswald', sans-serif"
+            },
+            ".navbar, .dropdown-menu": {
+              "background": "#28324e"
+            },
+            ".dropdown-menu .dropdown-toggle[aria-expanded=\"true\"], .dropdown-menu a:hover, .dropdown-menu a:focus": {
+              "background": "#212941"
+            },
+            ".navbar-toggler": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "dropdown-menu-2btn",
+          "_anchor": "dropdown-menu-2btn-d",
+          "_params": {
+            "bgColor": "#28324e",
+            "fontSize": "1.2",
+            "fontName": {
+              "name": "Montserrat",
+              "url": "https://fonts.googleapis.com/css?family=Montserrat:400,700",
+              "css": "'Montserrat', sans-serif"
+            },
+            "fontColor": "#ffffff",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": false
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "assets/images/pay-128x128-99.png",
+              "class": "",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com",
+              "title": "",
+              "linkInNewWindow": false
+            }
+          },
+          "brand": "<a class=\"text-white\" data-app-selector=\".navbar-brand a\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Konstant Pay</a>",
+          "items": "<li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\"><p>MENU</p></a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html\">Home</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"btc.html\">BTC</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"process.html\" aria-expanded=\"false\">Donation Process</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"about.html\">About us</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-info\" href=\"pages/dir/login.html\" target=\"_blank\">LOGIN</a></li>"
+        },
+        {
+          "_afterNavbarItem": ".mbr-section > .mbr-box__magnet",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "slider",
+          "_params": {
+            "autoplay": true,
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "slides": [
+              {
+                "active": true,
+                "image": "assets/images/donate3-2000x708-19.jpg",
+                "contentAlign": "center",
+                "overlay": true,
+                "showTitle": true,
+                "title": "KonstantPay Platform",
+                "showText": false,
+                "text": "Develop fully responsive, mobile-optimized websites that look amazing on any devices and browsers. Preview how your website will appear on phones, tablets and desktops directly in the visual editor.",
+                "showButtons": true,
+                "buttons": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"../pages/dir/register.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">REGISTER NOW</a> "
+              },
+              {
+                "active": false,
+                "image": "assets/images/team1-2000x1388-78.jpg",
+                "contentAlign": "center",
+                "overlay": true,
+                "showTitle": true,
+                "title": "Konstant Pay Platform",
+                "showText": true,
+                "text": "A global donation platform to fulfill your dream - Both Local Currency &amp; Cryptho-currency (BTC)",
+                "showButtons": true,
+                "buttons": " <a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"../pages/dir/login.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">LOGIN NOW</a>"
+              }
+            ],
+            "fullScreen": true,
+            "bgColor": "#ffffff",
+            "showBullets": true
+          },
+          "_anchor": "slider-e",
+          "articleLayout": false
+        },
+        {
+          "_inherit": "msg-box5",
+          "_tags": [
+            "Theme"
+          ],
+          "_styles": {
+            ".mbr-header__text": {
+              "color": "#28324e"
+            },
+            ".mbr-header__subtext": {
+              "color": "#ffffff"
+            },
+            ".mbr-article": {
+              "color": "#ffffff"
+            },
+            ".mbr-article P": {
+              "color": "#28324e"
+            },
+            ".mbr-article LI": {
+              "color": "#28324e"
+            }
+          },
+          "_name": "msg-box4",
+          "_anchor": "msg-box4-k",
+          "_params": {
+            "paddingTop": "2",
+            "paddingBottom": "1",
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#ffffff",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "inverse": true,
+            "showTitle": true,
+            "showMeta": false,
+            "showText": true,
+            "showButtons": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "class": "mbr-figure__img",
+              "width": 1400,
+              "src": "assets/images/bitcoin1-1400x786-38.png",
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "video": {
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw",
+              "aspectratio": "16:9",
+              "autoplay": false,
+              "loop": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-msg-box4",
+              "link": "",
+              "size": 0
+            }
+          },
+          "headerAlign": "left",
+          "title": "TOMORROW'S MONEY",
+          "meta": "By John Smith posted July 30, 2015",
+          "text": "<p>Bitcoins are the equivalent of Internet cash. You can send bitcoins over the Internet directly to anyone with no middle man. Like cash, Bitcoin transactions are irreversible. Bitcoins are traded worldwide.</p><p><b>BITCOIN EXCLUSIVES</b><br></p><p>Here is a list of things that you can only do with Bitcoin:<br></p><ol><li>Spend and transfer money internationally for less than a penny.<br></li><li>Sell on the Internet without setting up with a payment service.<br></li><li>Protect your wealth from devaluation by the government.<br></li><li>Donate to any Bitcoin-accepting organization an.</li></ol><p><b>CONSUMERS LOVE BITCOIN</b><br></p><p>There are lots of reasons consumers love Bitcoin:<br></p><p><b>Easier checkout</b></p><p>Paying with bitcoins is easier than using a credit card at check out. Unlike a credit card, with bitcoins, you don’t need to fill out a credit card number, an expiration date, a card holder name, or a CCV.<br></p><p><b>Cheaper prices</b></p><p>Merchants typically pay from 2% to 3% in credit card transaction fees. Merchants who accept bitcoins will be able to avoid credit card fees and can pass these savings on to consumers.&nbsp;</p><p><b>BITCOIN IS BETTER THAN REGULAR CURRENCIES</b></p><ol><li>Some of the reasons Bitcoin is better than regular currencies:<br></li><li>Bitcoin is an international currency.<br></li><li>Bitcoin can be spent all over the world.<br></li><li>Bitcoins cannot be counterfeited.<br></li><li>There is no printing technology that will ever be able to fool the bitcoin network.<br></li><li>Bitcoin cannot be devalued.<br></li><li>Only 21 million bitcoins will ever be issued. Unlike regular currencies, since Bitcoin is not controlled by any government or bank, the raising of a debt ceiling and quantitative easing cannot devalue bitcoins.<br></li></ol><p><b>TECHNOLOGY</b><br></p><p>Bitcoins are implemented using the latest trusted technologies:<br></p><ol><li>The same cryptography that powers Internet banking.<br></li><li>Peer-to-peer networking protects Bitcoin from governmental or individual interference.<br></li><li>Allows anyone to audit and improve the Bitcoin source code.<br></li></ol>",
+          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">LEARN MORE</a>"
+        },
+        {
+          "_inherit": "msg-box5",
+          "_tags": [
+            "Theme"
+          ],
+          "_styles": {
+            ".mbr-header__text": {
+              "color": "#28324e",
+              "font-family": "'Oswald', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Oswald:400,300,700"
+            },
+            ".mbr-header__subtext": {
+              "color": "#ffffff"
+            },
+            ".mbr-article": {
+              "color": "#ffffff"
+            },
+            ".mbr-article P": {
+              "color": "#28324e"
+            },
+            ".mbr-article LI": {
+              "color": "#28324e"
+            }
+          },
+          "_name": "msg-box4",
+          "_anchor": "msg-box4-m",
+          "_params": {
+            "paddingTop": "1",
+            "paddingBottom": "0",
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#efefef",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "inverse": true,
+            "showTitle": true,
+            "showMeta": false,
+            "showText": true,
+            "showButtons": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "class": "mbr-figure__img",
+              "width": 1400,
+              "src": "assets/images/bitcoin3-1400x700-7.png",
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "video": {
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw",
+              "aspectratio": "16:9",
+              "autoplay": false,
+              "loop": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-msg-box4",
+              "link": "",
+              "size": 0
+            }
+          },
+          "headerAlign": "left",
+          "title": "WHAT TO DO WITH YOUR BITCOINS",
+          "meta": "By John Smith posted July 30, 2015",
+          "text": "<ol><li>Save your bitcoins<br></li><li>The easiest way to save your bitcoins is simply to leave them on the exchange.<br></li><li>Sell your bitcoins<br></li><li>Whenever you want, you can convert your bitcoins to cash by selling them on the exchange.<br></li><li>Transfer your bitcoins<br></li><li>You can transfer your bitcoins to a wallet service or your own computer. If you’re sure your computer is secure and you backup regularly, you can download and install the Bitcoin wallet software on your computer and transfer your bitcoins to your computer.<br></li><li>Spend your bitcoins.</li></ol><p>&nbsp;<b>BUY &amp; SELL BITCOINS</b></p><ol><li>&nbsp;BTC-e<br></li><li>&nbsp;BitStamp<br></li><li>&nbsp;Okcoin<br></li><li>&nbsp;CEX.io<br></li><li>&nbsp;BitFinex<br></li><li>&nbsp;Local Bitcoins</li></ol>",
+          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">LEARN MORE</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts1",
+          "_styles": {
+            "P": {
+              "color": "#ffffff",
+              "font-size": "15px"
+            }
+          },
+          "_anchor": "contacts1-i",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#28324e",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#3C3C3C"
+          },
+          "logo": {
+            "image": {
+              "src": "assets/images/pay1-265x132-94.jpg",
+              "class": "mbr-contacts__img mbr-contacts__img--left",
+              "width": 265,
+              "active": true,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-contacts1",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "text1": "<b>ABOUT US</b><br>Konstant Pay<br><span style=\"line-height: 1.7em;\">A worldwide channel to connect participants to share donations and receive incentives in return.</span><br><span style=\"line-height: 1.7em;\">A group of ordinary people, selflessly helping each other.&nbsp;</span><br>",
+          "text2": "<strong>CONTACTS</strong><br>\nEmail: support@konstantpay.com<br>\nPhone 1: +234 (0) 810 175 08<span style=\"line-height: 25.5px;\">45</span><br>\nPhone 2: +234 (0) 803 352 7716<br>Phone 2: +234 (0) 813 159 2018<br>",
+          "text3": "<p class=\"mbr-contacts__text\"><strong>LINKS</strong></p><ul class=\"mbr-contacts__list\"><li><a href=\"https://blockchain.info/\" target=\"_blank\" class=\"text-white\">Blockchain</a><a class=\"mbr-contacts__link text-gray\" href=\"https://mobirise.com/\"></a></li><li><a href=\"#\" class=\"text-white\">Bank Transfer</a></li><li><a href=\"#\" class=\"text-white\">Local Transfer</a></li></ul>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "footer1",
+          "_styles": {
+            "P": {
+              "color": "#ffffff"
+            }
+          },
+          "_anchor": "footer1-j",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#475577",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright (c) 2017 Konstant Pay. &nbsp;All Right Reserved."
+        }
+      ]
+    },
+    "process.html": {
+      "settings": {
+        "title": "Donation Exchange Platform",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_inherit": "dropdown-menu",
+          "_tags": [
+            "Theme"
+          ],
+          "_styles": {
+            ".hide-buttons [data-button]": {
+              "display": "none !important"
+            },
+            ".navbar-brand a": {},
+            ".nav .link, .dropdown-item": {
+              "font-size": "1.2em",
+              "color": "#ffffff",
+              "googleLink": "https://fonts.googleapis.com/css?family=Montserrat:400,700",
+              "font-family": "'Montserrat', sans-serif"
+            },
+            ".navbar, .dropdown-menu": {
+              "background": "#28324e"
+            },
+            ".dropdown-menu .dropdown-toggle[aria-expanded=\"true\"], .dropdown-menu a:hover, .dropdown-menu a:focus": {
+              "background": "#212941"
+            },
+            ".navbar-toggler": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "dropdown-menu-2btn",
+          "_anchor": "dropdown-menu-2btn-n",
+          "_params": {
+            "bgColor": "#28324e",
+            "fontSize": "1.2",
+            "fontName": {
+              "name": "Montserrat",
+              "url": "https://fonts.googleapis.com/css?family=Montserrat:400,700",
+              "css": "'Montserrat', sans-serif"
+            },
+            "fontColor": "#ffffff",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": false
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "assets/images/pay-128x128-99.png",
+              "class": "",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com",
+              "title": "",
+              "linkInNewWindow": false
+            }
+          },
+          "brand": "<a class=\"text-white\" data-app-selector=\".navbar-brand a\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Konstant Pay</a>",
+          "items": "<li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\"><p>MENU</p></a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html\">Home</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"btc.html\">BTC</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"process.html\" aria-expanded=\"false\">Donation Process</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"about.html\">About us</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-info\" href=\"pages/dir/login.html\" target=\"_blank\">LOGIN</a></li>"
+        },
+        {
+          "_afterNavbarItem": ".mbr-section > .mbr-box__magnet",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "slider",
+          "_params": {
+            "autoplay": true,
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "slides": [
+              {
+                "active": true,
+                "image": "assets/images/donate3-2000x708-19.jpg",
+                "contentAlign": "center",
+                "overlay": true,
+                "showTitle": true,
+                "title": "KonstantPay Platform",
+                "showText": false,
+                "text": "Develop fully responsive, mobile-optimized websites that look amazing on any devices and browsers. Preview how your website will appear on phones, tablets and desktops directly in the visual editor.",
+                "showButtons": true,
+                "buttons": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"../pages/dir/register.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">REGISTER NOW</a> "
+              },
+              {
+                "active": false,
+                "image": "assets/images/team1-2000x1388-78.jpg",
+                "contentAlign": "center",
+                "overlay": true,
+                "showTitle": true,
+                "title": "Konstant Pay Platform",
+                "showText": true,
+                "text": "A global donation platform to fulfill your dream - Both Local Currency &amp; Cryptho-currency (BTC)",
+                "showButtons": true,
+                "buttons": " <a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"pages/dir/login.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">LOGIN NOW</a>"
+              }
+            ],
+            "fullScreen": true,
+            "bgColor": "#ffffff",
+            "showBullets": true
+          },
+          "_anchor": "slider-o",
+          "articleLayout": false
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-t",
+          "text": "<p><b>THE DONOR:</b><br></p><ol><li>Don’t reserve or pledge to make a donation if you not ready to make a donation, this platform is for participants willing to donate freely.<br></li><li>Make sure to send accurately the full donation to eliminate confirmation delay from recipient side.<br></li><li>Make use of available online currency converter(google, oanda.com) to get exact amount in your local currency and confirm with recipient the funds you’re sending before sending to reduce frustration.<br></li><li>When donating bitcoins, accurately copy the bitcoin address (account) correctly and remember to send exact bitcoin amount, make use of google to ask how much u get from your currency to bitcoins or from USD to bitcoins.<br></li><li>The maximum donation you can reserve at a time is two donations to give an opportunity to other participants to donate.<br></li><li>Take use of online chatroom/sms/whatsapp or call to contact the recipient to make the easiest fund transfer possible.<br></li><li>Adapt the new technology of Bitcoin currency, start donating in bitcoins for the fastest almost free transaction to another participant.<br></li></ol><p><b>RECIPIENT:</b><br></p><ol><li>Don’t confirm donation that you have not received in your account whether local transfer, bitcoins, eft, mobile money or any other fund processing options accepted.<br></li><li>Once you receive fund, do confirm in the system immediately and communicate with the donor to confirm on his/her side in the system for donor’s donation to be scheduled.<br></li><li>If no donation received from donor after reservation for maximum 15 hours and no communication, lodge a complaint and the support will reschedule your reserved donation and that donor will be suspended or blocked permanently.<br></li><li>Be available online when you’re expecting a donation to make it easier and quick to complete the transaction with donor in real time.<br></li></ol><p><b>DONATION PERCENTAGE HOLDS:</b><br></p><p>The system holds a percentage between 20% of your incoming donation in order for users to re-donate and once you donate again, your hold percentage is then released to the next donation. For more details, read Re-commit concept page.<br></p><p><b>BONUS:</b></p><p>The Donation Hub platform offer $15 referral bonus for every new user you help to sign up and make their first donation. That’s to motivate participants and to work together towards one common goal, your bonus is added to your incoming or hold donations automatically.<br></p><p><b>Contact support for more help</b></p>",
+          "_styles": {
+            "LI": {
+              "color": "#28324e"
+            },
+            "P": {
+              "color": "#28324e"
+            }
+          }
+        },
+        {
+          "_styles": {
+            ".mbr-header .mbr-header__text": {
+              "color": "#fff",
+              "font-size": "20px",
+              "font-family": "'Bitter', serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Bitter:400,700"
+            },
+            ".mbr-article": {
+              "color": "#fff"
+            },
+            ".btn": {
+              "font-family": "'Ubuntu', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Ubuntu:400,300,700"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "msg-box1",
+          "_anchor": "msg-box1-w",
+          "_params": {
+            "paddingTop": "2",
+            "paddingBottom": "2",
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#475577",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showText": false,
+            "showButtons": true
+          },
+          "title": "We're here to help one another!",
+          "text": "Mobirise comes with huge collection of pre made layouts to help make your development faster.",
+          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"pages/dir/register.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Sign Up</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts1",
+          "_styles": {
+            "P": {
+              "color": "#ffffff",
+              "font-size": "15px"
+            }
+          },
+          "_anchor": "contacts1-r",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#28324e",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#3C3C3C"
+          },
+          "logo": {
+            "image": {
+              "src": "assets/images/pay1-265x132-94.jpg",
+              "class": "mbr-contacts__img mbr-contacts__img--left",
+              "width": 265,
+              "active": true,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-contacts1",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "text1": "<b>ABOUT US</b><br>Konstant Pay<br><span style=\"line-height: 1.7em;\">A worldwide channel to connect participants to share donations and receive incentives in return.</span><br><span style=\"line-height: 1.7em;\">A group of ordinary people, selflessly helping each other.&nbsp;</span><br>",
+          "text2": "<strong>CONTACTS</strong><br>\nEmail: support@konstantpay.com<br>\nPhone 1: +234 (0) 810 175 08<span style=\"line-height: 25.5px;\">45</span><br>\nPhone 2: +234 (0) 803 352 7716<br>Phone 2: +234 (0) 813 159 2018<br>",
+          "text3": "<p class=\"mbr-contacts__text\"><strong>LINKS</strong></p><ul class=\"mbr-contacts__list\"><li><a href=\"https://blockchain.info/\" target=\"_blank\" class=\"text-white\">Blockchain</a><a class=\"mbr-contacts__link text-gray\" href=\"https://mobirise.com/\"></a></li><li><a href=\"#\" class=\"text-white\">Bank Transfer</a></li><li><a href=\"#\" class=\"text-white\">Local Transfer</a></li></ul>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "footer1",
+          "_styles": {
+            "P": {
+              "color": "#ffffff"
+            }
+          },
+          "_anchor": "footer1-s",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#475577",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright (c) 2017 Konstant Pay. &nbsp;All Right Reserved."
+        }
+      ]
+    },
+    "about.html": {
+      "settings": {
+        "title": "Donation Exchange Platform",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_inherit": "dropdown-menu",
+          "_tags": [
+            "Theme"
+          ],
+          "_styles": {
+            ".hide-buttons [data-button]": {
+              "display": "none !important"
+            },
+            ".navbar-brand a": {},
+            ".nav .link, .dropdown-item": {
+              "font-size": "1.2em",
+              "color": "#ffffff",
+              "googleLink": "https://fonts.googleapis.com/css?family=Montserrat:400,700",
+              "font-family": "'Montserrat', sans-serif"
+            },
+            ".navbar, .dropdown-menu": {
+              "background": "#28324e"
+            },
+            ".dropdown-menu .dropdown-toggle[aria-expanded=\"true\"], .dropdown-menu a:hover, .dropdown-menu a:focus": {
+              "background": "#212941"
+            },
+            ".navbar-toggler": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "dropdown-menu-2btn",
+          "_anchor": "dropdown-menu-2btn-x",
+          "_params": {
+            "bgColor": "#28324e",
+            "fontSize": "1.2",
+            "fontName": {
+              "name": "Montserrat",
+              "url": "https://fonts.googleapis.com/css?family=Montserrat:400,700",
+              "css": "'Montserrat', sans-serif"
+            },
+            "fontColor": "#ffffff",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": false
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "assets/images/pay-128x128-99.png",
+              "class": "",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com",
+              "title": "",
+              "linkInNewWindow": false
+            }
+          },
+          "brand": "<a class=\"text-white\" data-app-selector=\".navbar-brand a\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Konstant Pay</a>",
+          "items": "<li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\"><p>MENU</p></a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html\">Home</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"btc.html\">BTC</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"process.html\" aria-expanded=\"false\">Donation Process</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"about.html\">About us</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-info\" href=\"pages/dir/login.html\" target=\"_blank\">LOGIN</a></li>"
+        },
+        {
+          "_afterNavbarItem": ".mbr-section > .mbr-box__magnet",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "slider",
+          "_params": {
+            "autoplay": true,
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "slides": [
+              {
+                "active": true,
+                "image": "assets/images/donate3-2000x708-19.jpg",
+                "contentAlign": "center",
+                "overlay": true,
+                "showTitle": true,
+                "title": "KonstantPay Platform",
+                "showText": false,
+                "text": "Develop fully responsive, mobile-optimized websites that look amazing on any devices and browsers. Preview how your website will appear on phones, tablets and desktops directly in the visual editor.",
+                "showButtons": true,
+                "buttons": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"../pages/dir/register.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">REGISTER NOW</a> "
+              },
+              {
+                "active": false,
+                "image": "assets/images/team1-2000x1388-78.jpg",
+                "contentAlign": "center",
+                "overlay": true,
+                "showTitle": true,
+                "title": "Konstant Pay Platform",
+                "showText": true,
+                "text": "A global donation platform to fulfill your dream - Both Local Currency &amp; Cryptho-currency (BTC)",
+                "showButtons": true,
+                "buttons": " <a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"../pages/dir/login.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">LOGIN NOW</a>"
+              }
+            ],
+            "fullScreen": true,
+            "bgColor": "#ffffff",
+            "showBullets": true
+          },
+          "_anchor": "slider-y",
+          "articleLayout": false
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_styles": {
+            "LI": {
+              "color": "#28324e"
+            },
+            "P": {
+              "color": "#28324e"
+            }
+          },
+          "_anchor": "content1-z",
+          "text": "<p><b>About Konstant Pay</b><br></p><p><b>Konstant Pay</b> is an online donation exchange and social network, a global platform to connect users with access to internet and a minimum of $10 or more qualify to earn an incentive of (20% - 50%) percentage from 48hrs to 30days based on supply and demand state. The system is designed based on latest technology with peer to peer concept and cryptocurrency.<br></p><p>There's no turning back now. The cryptocurrency revolution is well on its way. Blockchain technology has penetrated many different industries and has become a buzzword amongst banksters and regulators. The next 10 years are going to be some of the most exciting for humanity as the current paradigms come crashing down, to be replaced by decentralized private and secure peer-to-peer systems. We're excited about what's to come and want you to join us in this excitement.<br></p><p>When you join <b>Konstant Pay</b> and contribute $10 or more, you become an active member and your life begins to change for a better with the privilege of affording to a basic living, might be a holiday trip, a loan, finishing house bond amongst other benefits.<br></p><p><b>Konstant Pay</b> is a group of ordinary people, selflessly helping one another, a Global mutual aid from global communities with the mission to close the gap between the privileged and less privileged.<br></p><p>It is to enlighten <b>Konstant Pay</b> members about the easy ways of fulfilling long dreamt wishes in both short and long terms, supporting people’s transformation and fulfilling their life dreams.<br></p><p><b>Konstant Pay</b> is not a financial institution. It’s a worldwide donation and social platform and no donations collect from users of the platform. This is an opportunity to connect people around the world to share possibilities and accomplish financial strain. Konstant Pay only works as online social channel to connect participants worldwide and there is no central account.<br></p><p><b>At Konstant Pay, </b>we aim to empower and improve on individual standard of living, everything is very simple and straight forward: one participant make a donation of his choice to other participant and in return, the donor receive an incentive plus donated amount in pre-stipulated timeframe.<br></p><p><b>Vision</b></p><ol><li>To be a leading online donation Exchange platform around the globe that is inspiring people to help others making a positive economic and social change in their lives.<br></li><li>Out main aim is to connect people globally through donation exchange, sharing has never been so interesting and life enrichment on this platform.<br></li><li>We don’t promise getting rich or become a millionaire on our platform but one can be unbound from financial difficulties and that’s our main priority.<br></li><li>We plan to generated revenue for our dedicated servers and administration budget through ads revenue placed on our website.<br></li><li>Based on our strategic plan, we expect to change lives globally; we believe that we are on the face of the earth to make great change in life.<br></li><li>We are constantly focusing on innovating. We believe in the simple not the complex. We believe that we need to own and control our lives.<br></li><li>To help people enjoy life, afford financial needs as well as cost of living which has skyrocketed in recent years and life affordability is more and more expensive.<br></li><li>We aiming at focusing on personal development and not to get distracted by empty promise systems that don’t last a day or two because of greediness and selfishness amongst participant.<br></li><li>Our vision is to bring people globally together to fight financial strain that have left countless in debts and unable to afford grocery in their mortgage homes.<br></li><li>Our platform warmly welcomes all individuals globally from 18yrs and above with the intention to fulfill their dreams.<br></li></ol><p><i>Go ahead and take the first step, signup and take a moment to educate yourself how the system works and remember that success is the sum of small efforts, repeated over time to create freedom in our lives.<br></i></p><p><b><br></b></p>"
+        },
+        {
+          "_styles": {
+            ".mbr-header .mbr-header__text": {
+              "color": "#fff",
+              "font-size": "20px",
+              "font-family": "'Bitter', serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Bitter:400,700"
+            },
+            ".mbr-article": {
+              "color": "#fff"
+            },
+            ".btn": {
+              "font-family": "'Ubuntu', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Ubuntu:400,300,700"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "msg-box1",
+          "_anchor": "msg-box1-10",
+          "_params": {
+            "paddingTop": "2",
+            "paddingBottom": "2",
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#475577",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showText": false,
+            "showButtons": true
+          },
+          "title": "We're here to help one another!",
+          "text": "Mobirise comes with huge collection of pre made layouts to help make your development faster.",
+          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"pages/dir/register.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Sign Up</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts1",
+          "_styles": {
+            "P": {
+              "color": "#ffffff",
+              "font-size": "15px"
+            }
+          },
+          "_anchor": "contacts1-11",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#28324e",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#3C3C3C"
+          },
+          "logo": {
+            "image": {
+              "src": "assets/images/pay1-265x132-94.jpg",
+              "class": "mbr-contacts__img mbr-contacts__img--left",
+              "width": 265,
+              "active": true,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-contacts1",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "text1": "<b>ABOUT US</b><br>Konstant Pay<br><span style=\"line-height: 1.7em;\">A worldwide channel to connect participants to share donations and receive incentives in return.</span><br><span style=\"line-height: 1.7em;\">A group of ordinary people, selflessly helping each other.&nbsp;</span><br>",
+          "text2": "<strong>CONTACTS</strong><br>\nEmail: support@konstantpay.com<br>\nPhone 1: +234 (0) 810 175 08<span style=\"line-height: 25.5px;\">45</span><br>\nPhone 2: +234 (0) 803 352 7716<br>Phone 2: +234 (0) 813 159 2018<br>",
+          "text3": "<p class=\"mbr-contacts__text\"><strong>LINKS</strong></p><ul class=\"mbr-contacts__list\"><li><a href=\"https://blockchain.info/\" target=\"_blank\" class=\"text-white\">Blockchain</a><a class=\"mbr-contacts__link text-gray\" href=\"https://mobirise.com/\"></a></li><li><a href=\"#\" class=\"text-white\">Bank Transfer</a></li><li><a href=\"#\" class=\"text-white\">Local Transfer</a></li></ul>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "footer1",
+          "_styles": {
+            "P": {
+              "color": "#ffffff"
+            }
+          },
+          "_anchor": "footer1-12",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#475577",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright (c) 2017 Konstant Pay. &nbsp;All Right Reserved."
+        }
+      ]
+    }
+  }
+}

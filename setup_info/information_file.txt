@@ -1,0 +1,25 @@
+===========Loan management software installation instruction==========
+======================================================================
+======================================================================
+Below are the steps to setup the loan software:
+
+(1) After downloading the loan file in zip (loan.zip), Extract the file in your local server OR upload it to your online server and extract
+(2) Open the loan folder and click on database folder
+(3) Install the database in database folder
+(4) To setup the connection, click on config folder in the loan folder
+(5) Then open the file named "connect.php"
+(6) Change the database configuration to your own
+(7) Mover a pasta toda par C:\xammp\htpdocs
+(8) Then deploy the application using your browser
+=====================================================================
+=====================================================================
+......................Then enjoy your software.......................
+=====================================================================
+=====================================================================
+----------------LOGIN DETAILS----------------------------------------
+---------------------------------------------------------------------
+
+Username: admin
+Password: admin
+
+---------------------------------------------------------------------
