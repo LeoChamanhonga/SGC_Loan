@@ -11,7 +11,7 @@
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">Fechar navigation</span>
       </a>
 
       <div class="navbar-custom-menu">
@@ -69,7 +69,7 @@
 			$call = mysqli_query($link, "SELECT * FROM user WHERE id = '$id'");
 			if(mysqli_num_rows($call) == 0)
 			{
-			echo "<script>alert('Data Not Found!'); </script>";
+			echo "<script>alert('Dados não encontrados!'); </script>";
 			}
 			else
 			{
@@ -95,7 +95,7 @@
                 <div class="row">
                   <div class="col-xs-4 text-center">
 				 
-                    <a href="profile.php?id=<?php echo $_SESSION['tid']; ?>">Profile</a>
+                    <a href="profile.php?id=<?php echo $_SESSION['tid']; ?>">Perfil</a>
 					
                   </div>
 <?php
@@ -103,14 +103,14 @@ $check = mysqli_query($link, "SELECT * FROM emp_permission WHERE tid = '".$_SESS
 while($get_check = mysqli_fetch_array($check)){
 $pread = $get_check['pread'];
 ?>
-                <?php echo ($pread == 1) ? '<div class="col-xs-4 text-center"><a href="listborrowers.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("403").'">Borrowers</a></div>' : ''; ?>
+                <?php echo ($pread == 1) ? '<div class="col-xs-4 text-center"><a href="listborrowers.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("403").'">Mutuários</a></div>' : ''; ?>
 <?php } ?>
 <?php
 $check = mysqli_query($link, "SELECT * FROM emp_permission WHERE tid = '".$_SESSION['tid']."' AND module_name = 'Internal Message'") or die ("Error" . mysqli_error($link));
 while($get_check = mysqli_fetch_array($check)){
 $pread = $get_check['pread'];
 ?>
-                <?php echo ($pread == 1) ? '<div class="col-xs-4 text-center"><a href="inboxmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'">Mailbox</a></div>' : ''; ?>
+                <?php echo ($pread == 1) ? '<div class="col-xs-4 text-center"><a href="inboxmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'">Caixa de Entrada</a></div>' : ''; ?>
 <?php } ?>
                 </div>
                 <!-- /.row -->
@@ -122,7 +122,7 @@ $check = mysqli_query($link, "SELECT * FROM emp_permission WHERE tid = '".$_SESS
 while($get_check = mysqli_fetch_array($check)){
 $pcreate = $get_check['pcreate'];
 ?>
-                <?php echo ($pcreate == 1) ? '<div class="pull-left"><a href="newmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'" class="btn btn-info btn-flat">New Message</a></div>' : ''; ?>
+                <?php echo ($pcreate == 1) ? '<div class="pull-left"><a href="newmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'" class="btn btn-info btn-flat">Nova Mensagem</a></div>' : ''; ?>
 <?php } ?>
                 <div class="pull-right">
                   <a href="../logout.php" class="btn btn-warning btn-flat"><i class="fa fa-sign-out"></i>Sign out</a>

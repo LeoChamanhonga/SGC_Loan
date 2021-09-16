@@ -126,7 +126,7 @@ while($row = mysqli_fetch_assoc($call)){
               <td colspan="2"><div align="center"><strong>Admin Login Details </strong></div></td>
             </tr>
             <tr>
-              <td width="75">Username:</td>
+              <td width="75">Utilizador:</td>
               <td width="174"><span class="style1"> admin</span></td>
             </tr>
             <tr>

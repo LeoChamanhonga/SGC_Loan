@@ -2,7 +2,7 @@
 	       <div class="box-body">
 			<div class="panel panel-success">
             <div class="panel-heading">
-            <h3 class="panel-title"><i class="fa fa-user"></i> New Customer Registration Form</h3>
+            <h3 class="panel-title"><i class="fa fa-user"></i> Registar Novo Mutuário</h3>
             </div>
 
              <div class="box-body">
@@ -29,19 +29,19 @@ $check = getimagesize($_FILES["image"]["tmp_name"]);
 	
 if($check == false)
 {
-	echo "<p style='font-size:24px; color:#FF0000'>Invalid file type</p>";
+	echo "<p style='font-size:24px; color:#FF0000'>Tipo de Ficheiro invalido</p>";
 }
 elseif(file_exists($target_file)) 
 {
-	echo "<p style='font-size:24px; color:#FF0000'>Already exists.</p>";
+	echo "<p style='font-size:24px; color:#FF0000'>Já Existe.</p>";
 }
 elseif($_FILES["image"]["size"] > 500000)
 {
-	echo "<p style='font-size:24px; color:#FF0000'>Image must not more than 500KB!</p>";
+	echo "<p style='font-size:24px; color:#FF0000'>A imagem não deve ser maior 500KB!</p>";
 }
 elseif($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif")
 {
-	echo "<p style='font-size:24px; color:#FF0000'>Sorry, only JPG, JPEG, PNG & GIF Files are allowed.</p>";
+	echo "<p style='font-size:24px; color:#FF0000'>Desculpa, only JPG, JPEG, PNG & GIF So este formato.</p>";
 }
 else{
 	$sourcepath = $_FILES["image"]["tmp_name"];
@@ -53,10 +53,10 @@ else{
 	$insert = mysqli_query($link, "INSERT INTO borrowers VALUES('','$fname','$lname','$email','$phone','$addrs1','$addrs2','$city','$state','$zip','$country','','$account','0.0','$location',NOW(),'$status')") or die (mysqli_error($link));
 	if(!$insert)
 	{
-		echo "<div class='alert alert-info'>Unable to Insert Borrower Records.....Please try again later</div>";
+		echo "<div class='alert alert-info'>Não foi possivel adicionar mutuário.....Tente mas tarde</div>";
 	}
 	else{
-		echo "<div class='alert alert-success'>New Customer Added Successfully!</div>";
+		echo "<div class='alert alert-success'>Novo Mutuário adicionado com sucesso!</div>";
 	}
 }
 }
@@ -64,12 +64,12 @@ else{
 			 <form class="form-horizontal" method="post" enctype="multipart/form-data">
 			  <?php echo '<div class="alert alert-info fade in" >
 			  <a href = "#" class = "close" data-dismiss= "alert"> &times;</a>
-  				<strong>Note that&nbsp;</strong> &nbsp;&nbsp;Some Fields are Rquired.
+  				<strong>Note que&nbsp;</strong> &nbsp;&nbsp;Campos obrigatorios.
 				</div>'?>
              <div class="box-body">
 				
 			<div class="form-group">
-            <label for="" class="col-sm-2 control-label">Your Image</label>
+            <label for="" class="col-sm-2 control-label">Sua imagem</label>
 			<div class="col-sm-10">
   		  			 <input type='file' name="image" onChange="readURL(this);" /required>
        				 <img id="blah"  src="../avtar/user2.png" alt="Image Here" height="100" width="100"/>
@@ -77,26 +77,26 @@ else{
 			</div>
 			
 			 <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Account Number</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Numero de conta</label>
                   <div class="col-sm-10">
 <?php
 $account = '013'.rand(1000000,10000000);
 ?>
-                  <input name="account" type="text" class="form-control" value="<?php echo $account; ?>" placeholder="Account Number" readonly>
+                  <input name="account" type="text" class="form-control" value="<?php echo $account; ?>" placeholder="Numero de Conta" readonly>
                   </div>
                   </div>
 			
 			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">First Name</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Nome</label>
                   <div class="col-sm-10">
-                  <input name="fname" type="text" class="form-control" placeholder="First Name" required>
+                  <input name="fname" type="text" class="form-control" placeholder="Nome" required>
                   </div>
                   </div>
 				  
 		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Last Name</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Apelido</label>
                   <div class="col-sm-10">
-                  <input name="lname" type="text" class="form-control" placeholder="Last Name" required>
+                  <input name="lname" type="text" class="form-control" placeholder="Apelido" required>
                   </div>
                   </div>
 				  
@@ -108,42 +108,42 @@ $account = '013'.rand(1000000,10000000);
                   </div>
 				  
 		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Mobile Number</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Telemovel</label>
                   <div class="col-sm-10">
-                  <input name="phone" type="text" class="form-control" placeholder="Mobile Number" required>
+                  <input name="phone" type="text" class="form-control" placeholder="Telemovel" required>
                   </div>
                   </div>
 				  
 				  
 		 <div class="form-group">
-                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Address 1</label>
+                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Endereço</label>
                   	<div class="col-sm-10"><textarea name="addrs1"  class="form-control" rows="4" cols="80"></textarea></div>
           </div>
 					
 			<div class="form-group">
-                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Address 2</label>
+                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Endereço 2</label>
                   	<div class="col-sm-10"><textarea name="addrs2"  class="form-control" rows="4" cols="80"></textarea></div>
           	</div>
 			
 			
 			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">City</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Cidade</label>
                   <div class="col-sm-10">
-                  <input name="city" type="text" class="form-control" placeholder="City"required >
+                  <input name="city" type="text" class="form-control" placeholder="Cidade"required >
                   </div>
                   </div>
 				  
 		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">State</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Provincia</label>
                   <div class="col-sm-10">
-                  <input name="state" type="text" class="form-control" placeholder="State" required>
+                  <input name="state" type="text" class="form-control" placeholder="Provincia" required>
                   </div>
                   </div>
 				  
 				  <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Zip Code</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Codigo Postal</label>
                   <div class="col-sm-10">
-                  <input name="zip" type="text" class="form-control" placeholder="Zip Code" >
+                  <input name="zip" type="text" class="form-control" placeholder="Codigo Postal" >
                   </div>
                   </div>
 				  
@@ -405,7 +405,7 @@ $account = '013'.rand(1000000,10000000);
 			  <div align="right">
               <div class="box-footer">
                 				<button type="reset" class="btn btn-primary btn-flat"><i class="fa fa-times">&nbsp;Reset</i></button>
-                				<button name="save" type="submit" class="btn btn-success btn-flat"><i class="fa fa-save">&nbsp;Save</i></button>
+                				<button name="save" type="submit" class="btn btn-success btn-flat"><i class="fa fa-save">&nbsp;Gravar</i></button>
 
               </div>
 			  </div>

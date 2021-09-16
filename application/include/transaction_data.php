@@ -7,15 +7,15 @@
               <div class="table-responsive">
              <div class="box-body">
 <form method="post">
-			 <a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>&&mid=<?php echo base64_encode("401"); ?>"><button type="button" class="btn btn-flat btn-warning"><i class="fa fa-mail-reply-all"></i>&nbsp;Back</button> </a> 
-	 <button type="submit" class="btn btn-flat btn-danger" name="delete"><i class="fa fa-times"></i>&nbsp;Multiple Delete</button>
-	<a href="deposit.php?id=<?php echo $_SESSION['tid']; ?>&&mid=<?php echo base64_encode("410"); ?>"><button type="button" class="btn btn-flat btn-success"><i class="fa fa-plus"></i>&nbsp;Make Deposit</button></a>
-	<a href="withdraw.php?id=<?php echo $_SESSION['tid']; ?>&&mid=<?php echo base64_encode("410"); ?>"><button type="button" class="btn btn-flat btn-success"><i class="fa fa-plus"></i>&nbsp;Withdraw Money</button></a>
-	<a href="send_smsloan.php?id=<?php echo $_SESSION['tid']; ?>&&mid=<?php echo base64_encode("406"); ?>"><button type="button" class="btn btn-flat btn-info"><i class="fa fa-envelope"></i>&nbsp;Send SMS</button></a>
+			 <a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>&&mid=<?php echo base64_encode("401"); ?>"><button type="button" class="btn btn-flat btn-warning"><i class="fa fa-mail-reply-all"></i>&nbsp;Voltar</button> </a> 
+	 <button type="submit" class="btn btn-flat btn-danger" name="delete"><i class="fa fa-times"></i>&nbsp;Apagar Multiplos</button>
+	<a href="deposit.php?id=<?php echo $_SESSION['tid']; ?>&&mid=<?php echo base64_encode("410"); ?>"><button type="button" class="btn btn-flat btn-success"><i class="fa fa-plus"></i>&nbsp;Depositar</button></a>
+	<a href="withdraw.php?id=<?php echo $_SESSION['tid']; ?>&&mid=<?php echo base64_encode("410"); ?>"><button type="button" class="btn btn-flat btn-success"><i class="fa fa-plus"></i>&nbsp;Levantamento</button></a>
+	<a href="send_smsloan.php?id=<?php echo $_SESSION['tid']; ?>&&mid=<?php echo base64_encode("406"); ?>"><button type="button" class="btn btn-flat btn-info"><i class="fa fa-envelope"></i>&nbsp;Enviar SMS</button></a>
 
-	<a href="printtransaction.php" target="_blank" class="btn btn-primary btn-flat"><i class="fa fa-print"></i>&nbsp;Print</a>
-	<a href="transactionexcel.php" target="_blank" class="btn btn-success btn-flat"><i class="fa fa-send"></i>&nbsp;Export Excel</a>
-	<a href="pdftransaction.php" target="_blank" class="btn btn-info btn-flat"><i class="fa fa-file-pdf-o"></i>&nbsp;Export PDF</a>
+	<a href="printtransaction.php" target="_blank" class="btn btn-primary btn-flat"><i class="fa fa-print"></i>&nbsp;Imprimir</a>
+	<a href="transactionexcel.php" target="_blank" class="btn btn-success btn-flat"><i class="fa fa-send"></i>&nbsp;Exportar Excel</a>
+	<a href="pdftransaction.php" target="_blank" class="btn btn-info btn-flat"><i class="fa fa-file-pdf-o"></i>&nbsp;Exportar PDF</a>
 	
 	<hr>		
 			  
@@ -26,13 +26,13 @@
                   <th>TxID</th>
 				  <th>T_Type</th>
 				  <th>AcctNo.</th>
-                  <th>FName</th>
-				  <th>LName</th>
+                  <th>Nome</th>
+				  <th>Apelido</th>
                   <th>Email</th>
-                  <th>Phone</th>
-                  <th>Amount</th>
-				  <th>Date/Time</th>
-                  <th>Actions</th>
+                  <th>Telemovel</th>
+                  <th>Valor</th>
+				  <th>Data/Hora</th>
+                  <th>Acção</th>
                  </tr>
                 </thead>
                 <tbody>
@@ -40,7 +40,7 @@
 $select = mysqli_query($link, "SELECT * FROM transaction") or die (mysqli_error($link));
 if(mysqli_num_rows($select)==0)
 {
-echo "<div class='alert alert-info'>No data found yet!.....Check back later!!</div>";
+echo "<div class='alert alert-info'>Sem dados!.....Veja depois!!</div>";
 }
 else{
 while($row = mysqli_fetch_array($select))
@@ -71,7 +71,7 @@ $get_query = mysqli_fetch_array($query);
 ?>
 				<td><?php echo $get_query['currency'].number_format($amt,2,'.',','); ?></td>
 				<td><?php echo $dt; ?></td>
-				<td align="center"><a href="#myModal <?php echo $id; ?>"> <button type="button" class="btn btn-primary btn-flat" data-target="#myModal<?php echo $id; ?>" data-toggle="modal"><i class="fa fa-print"></i> Receipt</button></a></td>
+				<td align="center"><a href="#myModal <?php echo $id; ?>"> <button type="button" class="btn btn-primary btn-flat" data-target="#myModal<?php echo $id; ?>" data-toggle="modal"><i class="fa fa-print"></i> Recibo</button></a></td>
 				</tr>
 <?php } } ?>
              </tbody>
@@ -108,7 +108,7 @@ $get_query = mysqli_fetch_array($query);
 
 			<div class="box box-info">
             <div class="box-body">
-            <div class="alert alert-info" align="center" class="style2" style="color: #FFFFFF">NUMBER OF TRANSACTION:&nbsp;
+            <div class="alert alert-info" align="center" class="style2" style="color: #FFFFFF">NUMERO DE TRANSACOES:&nbsp;
 			<?php 
 			$call3 = mysqli_query($link, "SELECT * FROM transaction ");
 			$num3 = mysqli_num_rows($call3);

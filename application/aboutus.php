@@ -241,7 +241,7 @@ while($row = mysqli_fetch_assoc($call)){
 		
 		<li class="treeview ">
           <a href="#">
-            <i class="fa fa-book"></i> <span>Email Templates</span>
+            <i class="fa fa-book"></i> <span>Templates de Email</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -255,7 +255,7 @@ while($row = mysqli_fetch_assoc($call)){
 		
 		<li class="treeview">
           <a href="#">
-            <i class="fa fa-users"></i> <span>Borrowers</span>
+            <i class="fa fa-users"></i> <span>Mutuários</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>

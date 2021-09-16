@@ -53,9 +53,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>
-		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-book"></i> <span>Email Panel</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newemail.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("402").'"><i class="fa fa-circle-o"></i> Send Email</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="listemail.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("402").'"><i class="fa fa-circle-o"></i>List Email</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-book"></i> <span>Painel de Email</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newemail.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("402").'"><i class="fa fa-circle-o"></i> Enviar Email</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="listemail.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("402").'"><i class="fa fa-circle-o"></i>Lista de Email</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php
 }
@@ -65,9 +65,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 	?>	
-		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-book"></i> <span>Email Panel</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newemail.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("402").'"><i class="fa fa-circle-o"></i> Send Email</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="listemail.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("402").'"><i class="fa fa-circle-o"></i>List Email</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-book"></i> <span>Painel de Email</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newemail.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("402").'"><i class="fa fa-circle-o"></i> Enviar Email</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="listemail.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("402").'"><i class="fa fa-circle-o"></i>Lista de Email</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php } ?>
 		
@@ -80,9 +80,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>		
-		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-users"></i> <span>Borrowers</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newborrowers.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("403").'"><i class="fa fa-circle-o"></i> New Borrowers</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="listborrowers.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("403").'"><i class="fa fa-circle-o"></i>List Borrowers</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-users"></i> <span>Mutuários</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newborrowers.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("403").'"><i class="fa fa-circle-o"></i> Novo Mutuário</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="listborrowers.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("403").'"><i class="fa fa-circle-o"></i>Lista de Mutuários</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?> 
 <?php
 }
@@ -92,9 +92,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>		
-		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-users"></i> <span>Borrowers</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newborrowers.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("403").'"><i class="fa fa-circle-o"></i> New Borrowers</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="listborrowers.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("403").'"><i class="fa fa-circle-o"></i>List Borrowers</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-users"></i> <span>Mutuários</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newborrowers.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("403").'"><i class="fa fa-circle-o"></i> Novo Mutuário</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="listborrowers.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("403").'"><i class="fa fa-circle-o"></i>Lista de Mutuários</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?> 
 <?php } ?>		
 	
@@ -106,7 +106,7 @@ $check = mysqli_query($link, "SELECT * FROM emp_permission WHERE tid = '".$_SESS
 $get_check = mysqli_fetch_array($check);
 $pread = $get_check['pread'];
 ?>	
-	<?php echo ($pread == 1) ? '<li class="active"><a href="mywallet.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("404").'"><i class="fa fa-book"></i> <span>My Wallet</span></a></li>' : ''; ?>
+	<?php echo ($pread == 1) ? '<li class="active"><a href="mywallet.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("404").'"><i class="fa fa-book"></i> <span>Minha Carteira</span></a></li>' : ''; ?>
 <?php
 }
 else{
@@ -114,7 +114,7 @@ $check = mysqli_query($link, "SELECT * FROM emp_permission WHERE tid = '".$_SESS
 $get_check = mysqli_fetch_array($check);
 $pread = $get_check['pread'];
 	?>
-	<?php echo ($pread == 1) ? '<li><a href="mywallet.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("404").'"><i class="fa fa-book"></i> <span>My Wallet</span></a></li>' : ''; ?>
+	<?php echo ($pread == 1) ? '<li><a href="mywallet.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("404").'"><i class="fa fa-book"></i> <span>Minha Carteira</span></a></li>' : ''; ?>
 <?php } ?>	
 	
 	
@@ -126,9 +126,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>	
-		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-dollar"></i> <span>Loans</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i> New Loans</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="listloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i>List Loans</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-dollar"></i> <span>Emprestimo</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i> Novo Emprestimo</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="listloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i>Emprestimos</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php
 }
@@ -138,9 +138,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>	
-		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-dollar"></i> <span>Loans</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i> New Loans</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="listloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i>List Loans</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-dollar"></i> <span>Emprestimo</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i> Novo Emprestimo</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="listloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i>Emprestimos</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php } ?>
 		
@@ -153,10 +153,10 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>		
-		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-book"></i> <span>Message</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'"><i class="fa fa-circle-o"></i> New Message</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="inboxmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'"><i class="fa fa-circle-o"></i>Inbox Message</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="outboxmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'"><i class="fa fa-circle-o"></i>Outbox Message</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-book"></i> <span>Mensagem</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'"><i class="fa fa-circle-o"></i> Nova SMS</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="inboxmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'"><i class="fa fa-circle-o"></i>Inbox SMS</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="outboxmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'"><i class="fa fa-circle-o"></i>Outbox SMS</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php
 }
@@ -166,10 +166,10 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>		
-		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-book"></i> <span>Message</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'"><i class="fa fa-circle-o"></i> New Message</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="inboxmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'"><i class="fa fa-circle-o"></i>Inbox Message</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="outboxmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'"><i class="fa fa-circle-o"></i>Outbox Message</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-book"></i> <span>Mensagem</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'"><i class="fa fa-circle-o"></i> Nova SMS</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="inboxmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'"><i class="fa fa-circle-o"></i>Inbox SMS</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="outboxmessage.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("406").'"><i class="fa fa-circle-o"></i>Outbox SMS</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php } ?>
 		
@@ -181,7 +181,7 @@ $check = mysqli_query($link, "SELECT * FROM emp_permission WHERE tid = '".$_SESS
 $get_check = mysqli_fetch_array($check);
 $pread = $get_check['pread'];
 ?>		
-		<?php echo ($pread == 1) ? '<li class="active"><a href="missedpayment.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("407").'"><i class="fa fa-dollar"></i> <span>Missed Payment</span></a></li>' : ''; ?>	
+		<?php echo ($pread == 1) ? '<li class="active"><a href="missedpayment.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("407").'"><i class="fa fa-dollar"></i> <span>Pagamentos em Atrazo</span></a></li>' : ''; ?>	
 <?php
 }
 else{
@@ -189,7 +189,7 @@ $check = mysqli_query($link, "SELECT * FROM emp_permission WHERE tid = '".$_SESS
 $get_check = mysqli_fetch_array($check);
 $pread = $get_check['pread'];
 ?>		
-		<?php echo ($pread == 1) ? '<li><a href="missedpayment.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("407").'"><i class="fa fa-dollar"></i> <span>Missed Payment</span></a></li>' : ''; ?>	
+		<?php echo ($pread == 1) ? '<li><a href="missedpayment.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("407").'"><i class="fa fa-dollar"></i> <span>Pagamentos em Atrazo</span></a></li>' : ''; ?>	
 <?php } ?>
 	
 
@@ -201,9 +201,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>	
-        <?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-dollar"></i> <span>Payments</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newpayments.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("408").'"><i class="fa fa-circle-o"></i> New Payment</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="listpayment.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("408").'"><i class="fa fa-circle-o"></i>List Payments</a></li>' : ''; ?>
+        <?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-dollar"></i> <span>Pagamento</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newpayments.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("408").'"><i class="fa fa-circle-o"></i> Novo Pagamento</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="listpayment.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("408").'"><i class="fa fa-circle-o"></i>Lista PagamentoPayments</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?> 
 <?php
 }
@@ -213,9 +213,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>	
-        <?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-dollar"></i> <span>Payments</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newpayments.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("408").'"><i class="fa fa-circle-o"></i> New Payment</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="listpayment.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("408").'"><i class="fa fa-circle-o"></i>List Payments</a></li>' : ''; ?>
+        <?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-dollar"></i> <span>Pagamento</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newpayments.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("408").'"><i class="fa fa-circle-o"></i> Novo Pagamento</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="listpayment.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("408").'"><i class="fa fa-circle-o"></i>Lista Pagamento</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?> 
 <?php } ?>
 	
@@ -228,9 +228,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>		
-		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-user"></i> <span>Employee</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newemployee.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("409").'"><i class="fa fa-circle-o"></i> New Employee</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="listemployee.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("409").'"><i class="fa fa-circle-o"></i>List Employee</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-user"></i> <span>Funcionário</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newemployee.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("409").'"><i class="fa fa-circle-o"></i> Novo Funcionário</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="listemployee.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("409").'"><i class="fa fa-circle-o"></i>Lista Funcionário</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?> 
 <?php
 }
@@ -240,9 +240,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>		
-		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-user"></i> <span>Employee</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newemployee.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("409").'"><i class="fa fa-circle-o"></i> New Employee</a></li>' : ''; ?>
-        <?php echo ($pread == 1) ? '<li><a href="listemployee.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("409").'"><i class="fa fa-circle-o"></i>List Employee</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-user"></i> <span>Funcionário</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newemployee.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("409").'"><i class="fa fa-circle-o"></i> Novo Funcionário</a></li>' : ''; ?>
+        <?php echo ($pread == 1) ? '<li><a href="listemployee.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("409").'"><i class="fa fa-circle-o"></i>Lista Funcionário</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php } ?>
 
@@ -255,9 +255,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>		
-		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-cogs"></i> <span>Module Permission</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
-		<?php echo ($pread == 1) ? '<li><a href="permission_list.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("413").'"><i class="fa fa-circle-o"></i>Module Permission List</a></li>' : ''; ?>
-		<?php echo ($pcreate == 1) ? '<li><a href="add_permission.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("413").'"><i class="fa fa-circle-o"></i>Add Permission</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-cogs"></i> <span>Permissão</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+		<?php echo ($pread == 1) ? '<li><a href="permission_list.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("413").'"><i class="fa fa-circle-o"></i>Permissão por modulo</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li><a href="add_permission.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("413").'"><i class="fa fa-circle-o"></i>Adicionar Permissão</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php
 }
@@ -267,9 +267,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>		
-		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-cogs"></i> <span>Module Permission</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
-		<?php echo ($pread == 1) ? '<li><a href="permission_list.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("413").'"><i class="fa fa-circle-o"></i>Module Permission List</a></li>' : ''; ?>
-		<?php echo ($pcreate == 1) ? '<li><a href="add_permission.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("413").'"><i class="fa fa-circle-o"></i>Add Permission</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-cogs"></i> <span>Permissão</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+		<?php echo ($pread == 1) ? '<li><a href="permission_list.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("413").'"><i class="fa fa-circle-o"></i>Permissão por modulo</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li><a href="add_permission.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("413").'"><i class="fa fa-circle-o"></i>Adicionar Permissão</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php } ?>
 
@@ -282,11 +282,11 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>			
-		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-money"></i> <span>Savings Account</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
-		<?php echo ($pread == 1) ? '<li><a href="customer.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Customers</a></li>' : ''; ?> 
-		<?php echo ($pcreate == 1) ? '<li><a href="deposit.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Deposit Money</a></li>' : ''; ?>
-		<?php echo ($pcreate == 1) ? '<li><a href="withdraw.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Withdraw Money</a></li>' : ''; ?>
-		<?php echo ($pread == 1) ? '<li><a href="transaction.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>All Transaction</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-money"></i> <span>Poupança</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+		<?php echo ($pread == 1) ? '<li><a href="customer.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Clientes</a></li>' : ''; ?> 
+		<?php echo ($pcreate == 1) ? '<li><a href="deposit.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Depositos</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li><a href="withdraw.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Levatamento</a></li>' : ''; ?>
+		<?php echo ($pread == 1) ? '<li><a href="transaction.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Todas Transações</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php
 }
@@ -296,11 +296,11 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>			
-		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-money"></i> <span>Savings Account</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
-		<?php echo ($pread == 1) ? '<li><a href="customer.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Customers</a></li>' : ''; ?> 
-		<?php echo ($pcreate == 1) ? '<li><a href="deposit.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Deposit Money</a></li>' : ''; ?>
-		<?php echo ($pcreate == 1) ? '<li><a href="withdraw.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Withdraw Money</a></li>' : ''; ?>
-		<?php echo ($pread == 1) ? '<li><a href="transaction.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>All Transaction</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-money"></i> <span>Poupança</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+		<?php echo ($pread == 1) ? '<li><a href="customer.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Clientes</a></li>' : ''; ?> 
+		<?php echo ($pcreate == 1) ? '<li><a href="deposit.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Deposito</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li><a href="withdraw.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Levantamento</a></li>' : ''; ?>
+		<?php echo ($pread == 1) ? '<li><a href="transaction.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("410").'"><i class="fa fa-circle-o"></i>Todas Transações</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php } ?>
 
@@ -313,9 +313,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>		
-		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-gear"></i> <span>General Settings</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
-		<?php echo ($pcreate == 1) ? '<li><a href="system_set.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("411").'"><i class="fa fa-circle-o"></i>Company Setup</a></li>' : ''; ?>
-		<?php echo ($pcreate == 1) ? '<li><a href="sms.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("411").'"><i class="fa fa-circle-o"></i>SMS Gateway Settings</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-gear"></i> <span>Configuraçõs</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li><a href="system_set.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("411").'"><i class="fa fa-circle-o"></i>Configuraçao de Empresa</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li><a href="sms.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("411").'"><i class="fa fa-circle-o"></i>SMS Gateway</a></li>' : ''; ?>
 		<?php echo ($pread == 1) ? '<li><a href="backupdatabase.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("411").'"><i class="fa fa-circle-o"></i>Backup Database</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php
@@ -326,9 +326,9 @@ $get_check = mysqli_fetch_array($check);
 $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>		
-		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-gear"></i> <span>General Settings</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
-		<?php echo ($pcreate == 1) ? '<li><a href="system_set.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("411").'"><i class="fa fa-circle-o"></i>Company Setup</a></li>' : ''; ?>
-		<?php echo ($pcreate == 1) ? '<li><a href="sms.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("411").'"><i class="fa fa-circle-o"></i>SMS Gateway Settings</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-gear"></i> <span>Configuraçõs</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li><a href="system_set.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("411").'"><i class="fa fa-circle-o"></i>Configuraçao de Empresa</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li><a href="sms.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("411").'"><i class="fa fa-circle-o"></i>SMS Gateway</a></li>' : ''; ?>
 		<?php echo ($pread == 1) ? '<li><a href="backupdatabase.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("411").'"><i class="fa fa-circle-o"></i>Backup Database</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php } ?>

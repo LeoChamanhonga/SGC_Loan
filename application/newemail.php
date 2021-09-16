@@ -11,11 +11,11 @@
     <section class="content-header">
       <h1>
         Email Template
-        <small>Control panel</small>
+        <small>Painel de Control</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active"> <a href="listemail.php?id=<?php echo $_SESSION['tid']; ?>">Email Template</a></li>
+        <li class="active"> <a href="listemail.php?id=<?php echo $_SESSION['tid']; ?>">emplate de Email</a></li>
         <li class="active">Create</li>
       </ol>
     </section>
