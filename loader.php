@@ -39,7 +39,7 @@
 session_start();
 echo '<meta http-equiv="refresh" content="2;url=application/dashboard.php?tid='.$_SESSION['tid'].'">';
 echo '<br>';
-echo'<span class="itext" style="color: #FF0000">Logging IN. Please Wait!...</span>';
+echo'<span class="itext" style="color: #FF0000">A Entrar. Aguarde!...</span>';
 ?>
 </div>
 </body>

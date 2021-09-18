@@ -99,12 +99,12 @@ while($row = mysqli_fetch_assoc($call)){
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Please sign in here</p>
+    <p class="login-box-msg">Entrar </p>
 
     <form class="form"  method="post" enctype="multipart/form-data">
 	
       <div class="form-group has-feedback">
-        <input name="username" type="text" class="form-control" placeholder="Username/Email Address" required>
+        <input name="username" type="text" class="form-control" placeholder="Username/Email" required>
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
@@ -137,7 +137,7 @@ while($row = mysqli_fetch_assoc($call)){
               <td colspan="2"><div align="center"><strong>Staff Login Details </strong></div></td>
             </tr>
             <tr>
-              <td>Username:</td>
+              <td>Utilizador:</td>
               <td><span class="style1">at</span></td>
             </tr>
             <tr>

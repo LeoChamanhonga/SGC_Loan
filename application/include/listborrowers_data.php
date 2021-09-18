@@ -1,11 +1,11 @@
 <div class="row">
 		
 	       
-		    <section class="content">  
+<section class="content">  
 	        <div class="box box-success">
             <div class="box-body">
               <div class="table-responsive">
-             <div class="box-body">
+             	<div class="box-body">
 <form method="post">
 			 <a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>&&mid=<?php echo base64_encode("401"); ?>"><button type="button" class="btn btn-flat btn-warning"><i class="fa fa-mail-reply-all"></i>&nbsp;Voltar</button> </a> 
 <?php
@@ -106,14 +106,14 @@ while($gete = mysqli_fetch_array($se))
 							$id=$_POST['selector'];
 							$N = count($id);
 						if($id == ''){
-						echo "<script>alert('Row Not Selected!!!'); </script>";	
+						echo "<script>alert('Sem linhas Selecionadas!!!'); </script>";	
 						echo "<script>window.location='listborrowers.php?id=".$_SESSION['tid']."&&mid=".base64_encode("403")."'; </script>";
 							}
 							else{
 							for($i=0; $i < $N; $i++)
 							{
 								$result = mysqli_query($link,"DELETE FROM borrowers WHERE id ='$id[$i]'");
-								echo "<script>alert('Row Delete Successfully!!!'); </script>";
+								echo "<script>alert('Deletado com Sucesso!!!'); </script>";
 								echo "<script>window.location='listborrowers.php?id=".$_SESSION['tid']."&&mid=".base64_encode("403")."'; </script>";
 							}
 							}

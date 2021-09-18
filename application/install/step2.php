@@ -79,13 +79,13 @@
         }
 
         if ($passed == '11111') {
-            echo("<br/> $ltext <br/> Great! System Test Completed. You can run Advanced LMS on your server. Click Continue For Next Step.
+            echo("<br/> $ltext <br/> Great! System Test Completed. You can run SBD LMS on your server. Click Continue For Next Step.
  <br><br>
  <a href=\"step3.php\" class=\"btn btn-primary\">Continue</a> 
  ");
         } else {
             echo("<br/> $ltext <br/> Sorry. The requirements of Advanced LMS is not available on your server.
- Please contact with us- critech.getresponse@gmail.com with this code- $passed Or contact your server administrator
+ Please contact with us- leochamanhonga@gmail.com with this code- $passed Or contact your server administrator
   <br><br>
  <a href=\"#\" class=\"btn btn-primary disabled\">Correct The Problem To Continue</a> 
  ");
