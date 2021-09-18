@@ -78,6 +78,8 @@ CREATE TABLE IF NOT EXISTS `attachment` (
 -- Dumping data for table `attachment`
 --
 
+
+
 INSERT INTO `attachment` (`id`, `get_id`, `tid`, `attached_file`, `date_time`) VALUES
 (1, '1', 'Loan=1907598678', 'document/4887_File_cryptos documentation.docx', '2017-05-01 12:11:34'),
 (2, '2', 'Loan=21319580', 'document/2782_File_Email.docx', '2017-05-10 16:56:55'),
