@@ -236,7 +236,7 @@ while($row = mysqli_fetch_assoc($call)){
 			
 			?>
       <ul class="sidebar-menu">
-        <li class="header">NAVEGADOR PRINCIPAL</li>
+        <li class="header">NAVEGADOR 33 PRINCIPAL</li>
 		<li><a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-dashboard"></i> <span>Dashbord</span></a></li>
 		
 		<li class="treeview ">

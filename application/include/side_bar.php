@@ -127,8 +127,9 @@ $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>	
 		<?php echo ($pcreate == 1) ? '<li class="treeview active"><a href="#"><i class="fa fa-dollar"></i> <span>Emprestimo</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i> Novo Emprestimo</a></li>' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i>Novo Emprestimo</a></li>' : ''; ?>
         <?php echo ($pread == 1) ? '<li><a href="listloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i>Emprestimos</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="active"><a href="simulator.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i>Simulador</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php
 }
@@ -139,8 +140,9 @@ $pcreate = $get_check['pcreate'];
 $pread = $get_check['pread'];
 ?>	
 		<?php echo ($pcreate == 1) ? '<li class="treeview"><a href="#"><i class="fa fa-dollar"></i> <span>Emprestimo</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a><ul class="treeview-menu">' : ''; ?>
- 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i> Novo Emprestimo</a></li>' : ''; ?>
+ 		<?php echo ($pcreate == 1) ? '<li class="active"><a href="newloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i>Novo Emprestimo</a></li>' : ''; ?>
         <?php echo ($pread == 1) ? '<li><a href="listloans.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i>Emprestimos</a></li>' : ''; ?>
+		<?php echo ($pcreate == 1) ? '<li class="active"><a href="simulator.php?id='.$_SESSION['tid'].'&&mid='.base64_encode("405").'"><i class="fa fa-circle-o"></i>Simulador</a></li>' : ''; ?>
         <?php echo ($pcreate == 1) ? '</ul></li>' : ''; ?>
 <?php } ?>
 		
