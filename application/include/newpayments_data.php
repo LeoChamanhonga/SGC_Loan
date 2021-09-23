@@ -13,12 +13,12 @@
 				</div>'?>
              <div class="box-body">
 				
-			<div class="form-group">
+				 <div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Account#</label>
-                  <div class="col-sm-10">
-                  <input name="acte" type="text" class="form-control" placeholder="Account" required>
-                  </div>
-                  </div>
+            		<div class="col-sm-10">
+                  		<input name="acte" type="text" class="form-control" placeholder="Account" required>
+               	 	</div>
+            	</div>
 				  
 				   <div class="form-group">
                 <label for="" class="col-sm-2 control-label" style="color:#009900">Customer</label>
@@ -68,17 +68,17 @@
               </div>
 			  </div>
 			  
-			  <div class="form-group">
+			<div class="form-group">
                 <label for="" class="col-sm-2 control-label" style="color:#009900">Payment Date</label>
-			 <div class="col-sm-10">
-              <div class="input-group date">
-                  <div class="input-group-addon">
-                    <i class="fa fa-calendar"></i>
-                  </div>
-                  <input type="text" class="form-control pull-right" id="datepicker" name="pay_date">
-                </div>
+				<div class="col-sm-10">
+             		 <div class="input-group date">
+                 		 <div class="input-group-addon">
+                    		<i class="fa fa-calendar"></i>
+                  		</div>
+                  			<input type="text" class="form-control pull-right" id="datepicker" name="pay_date">
+                	</div>
               </div>
-			  </div>
+			</div>
 				  
 		<div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Amount to Pay</label>
