@@ -1,13 +1,12 @@
 <div class="box">
-        
-	       <div class="box-body">
-			<div class="panel panel-success">
+ 	<div class="box-body">
+		<div class="panel panel-success">
             <div class="panel-heading">
-            <h3 class="panel-title"><i class="fa fa-dollar"></i>&nbsp;Novo Emprestimo</h3>
+             	<h3 class="panel-title"><i class="fa fa-dollar"></i>&nbsp;Novo Emprestimo</h3>
             </div>
-             <div class="box-body">
+            <div class="box-body">
 
-			 <form class="form-horizontal" method="post" enctype="multipart/form-data" action="process_loan_info.php">
+			<form class="form-horizontal" method="post" enctype="multipart/form-data" action="process_loan_info.php">
 			  <?php echo '<div class="alert alert-info fade in" >
 			  <a href = "#" class = "close" data-dismiss= "alert"> &times;</a>
   				<strong>Note that&nbsp;</strong> &nbsp;&nbsp;Some Fields are Rquired.
@@ -32,7 +31,7 @@
 			  </div>
 			  
 			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Account</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Conta</label>
                   <div class="col-sm-10">
                   <select class="account select2" name="account" style="width: 100%;">
 				<option selected="selected">--Selecionar Conta de Cliente--</option>
@@ -45,14 +44,27 @@
 				?>
 				</select>
                   </div>
-                  </div>
-				 
+            </div>
+
+		
 		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Valor</label>
-                  <div class="col-sm-10">
+                <label for="" class="col-sm-2 control-label" style="color:#009900">Tipo de Credito</label>
+            <div class="col-sm-10">
+				<select name="country"  class="form-control" required>
+					<option value = "FAE">FAE</option>
+					<option value="CAVAS">CAVAS</option>
+				</select>
+		    </div>
+		</div>
+				
+		
+		
+		<div class="form-group">
+            <label for="" class="col-sm-2 control-label" style="color:#009900">Valor</label>
+                <div class="col-sm-10">
                   <input name="amount" type="text" class="form-control" placeholder="Valor" required>
-                  </div>
-                  </div>
+                </div>
+        </div>
 		
 		 <div class="form-group">
                   	<label for="" class="col-sm-2 control-label" style="color:#009900">Descriçao</label>
@@ -121,7 +133,7 @@ while($row = mysqli_fetch_array($sele))
 				  
 				 
 				 <div class="form-group">
-                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Morada/label>
+                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Morada </label>
                   	<div class="col-sm-10">
 					<textarea name="gaddress"  class="form-control" rows="4" cols="80"></textarea>
            			 </div>
@@ -186,7 +198,7 @@ while($row = mysqli_fetch_array($sele))
                   </div>
 				
 				
-				<div class="form-group">
+			<div class="form-group">
                   	<label for="" class="col-sm-2 control-label" style="color:#009900">Remarks</label>
                   	<div class="col-sm-10">
 					<textarea name="remark"  class="form-control" rows="4" cols="80"></textarea>
@@ -197,8 +209,8 @@ while($row = mysqli_fetch_array($sele))
 			 
 			  <div align="right">
               <div class="box-footer">
-                				<button type="reset" class="btn btn-primary btn-flat"><i class="fa fa-times">&nbsp;Reset</i></button>
-                				<button name="save_loan" type="submit" class="btn btn-success btn-flat"><i class="fa fa-save">&nbsp;Gravar</i></button>
+                <button type="reset" class="btn btn-primary btn-flat"><i class="fa fa-times">&nbsp;Reset</i></button>
+                <button name="save_loan" type="submit" class="btn btn-success btn-flat"><i class="fa fa-save">&nbsp;Gravar</i></button>
 
               </div>
 			  </div>
