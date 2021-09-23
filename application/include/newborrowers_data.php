@@ -161,7 +161,7 @@ $account = '013'.rand(1000000,10000000);
 				  
 		<div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Pais</label>
-                  <div class="col-sm-10">
+                <div class="col-sm-10">
 				<select name="country"  class="form-control" required>
 										<option value="">Selecione Pais&hellip;</option>
 										<option value="AX">&#197;land Islands</option>
@@ -256,7 +256,7 @@ $account = '013'.rand(1000000,10000000);
 										<option value="ZW">Zimbabwe</option>
 									</select>                 
 									</div>
-                 					</div>
+                </div>
 									 
 									 
 				<div class="form-group">
