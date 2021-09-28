@@ -267,11 +267,11 @@ $account = '013'.rand(1000000,10000000);
 			 </div>
 			 
 			  <div align="right">
-              <div class="box-footer">
-                				<button type="reset" class="btn btn-primary btn-flat"><i class="fa fa-times">&nbsp;Reset</i></button>
-                				<button name="save" type="submit" class="btn btn-success btn-flat"><i class="fa fa-save">&nbsp;Gravar</i></button>
+              	<div class="box-footer">
+                	<button type="reset" class="btn btn-primary btn-flat"><i class="fa fa-times">&nbsp;Reset</i></button>
+                	<button name="save" type="submit" class="btn btn-success btn-flat"><i class="fa fa-save">&nbsp;Gravar</i></button>
 
-              </div>
+             		 </div>
 			  </div>
 
 			 </form> 
