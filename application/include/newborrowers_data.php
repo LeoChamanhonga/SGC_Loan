@@ -17,6 +17,17 @@ if(isset($_POST['save']))
 {
 $fname =  mysqli_real_escape_string($link, $_POST['fname']);
 $lname = mysqli_real_escape_string($link, $_POST['lname']);
+$data_nascimento = mysqli_real_escape_string($link, $_POST['data_nascimento']);
+$sexo = mysqli_real_escape_string($link, $_POST['sexo']);
+$naturalidade = mysqli_real_escape_string($link, $_POST['naturalidade']);
+$filiacao = mysqli_real_escape_string($link, $_POST['filiacao']);
+$estado_civil = mysqli_real_escape_string($link, $_POST['estado_civil']);
+$residencia = mysqli_real_escape_string($link, $_POST['residencia']);
+$documento = mysqli_real_escape_string($link, $_POST['documento']);
+$numero_documento = mysqli_real_escape_string($link, $_POST['numero_documento']);
+$emissao = mysqli_real_escape_string($link, $_POST['emissao']);
+$validade = mysqli_real_escape_string($link, $_POST['validade']);
+$localEmit = mysqli_real_escape_string($link, $_POST['localEmit']);
 $email = mysqli_real_escape_string($link, $_POST['email']);
 $phone = mysqli_real_escape_string($link, $_POST['phone']);
 $addrs1 = mysqli_real_escape_string($link, $_POST['addrs1']);
@@ -69,7 +80,7 @@ else{
 	
 	$location = "img/".$_FILES['image']['name'];
 
-$insert = mysqli_query($link, "INSERT INTO borrowers VALUES('','$fname','$lname','$email','$phone','$addrs1','$addrs2','$city','$state','$zip','$country','$comment','$account','0.0','$location',NOW(),'$status')") or die (mysqli_error($link));
+$insert = mysqli_query($link, "INSERT INTO borrowers VALUES('','$fname','$lname', '$data_nascimento', '$sexo', '$naturalidade', '$filiacao', '$estado_civil', '$residencia', '$documento', '$numero_documento', '$emissao', '$validade','$localEmit','$email','$phone','$addrs1','$addrs2','$city','$state','$zip','$country','$comment','$account','0.0','$location',NOW(),'$status')") or die (mysqli_error($link));
 if(!$insert)
 {
 echo "<div class='alert alert-info'>impossivel inserir.....Por favor </div>";
@@ -111,7 +122,153 @@ $account = '013'.rand(1000000,10000000);
                   <input name="lname" type="text" class="form-control" placeholder="Apelido" required>
                   </div>
                   </div>
-				  
+				  <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Data de Nascimento</label>
+                <div class="col-sm-10">
+                  <input name="data_nascimento" type="date" class="form-control" placeholder="Data de Nascimento" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Sexo</label>
+                <div class="col-sm-10">
+                  <select name="sexo" class="form-control">
+                  	<option value="Masculino" selected="">Masculino</option>
+                  	<option value="Femenino">Femenino</option>
+                  </select>
+                </div>
+            </div>
+			<div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Naturalidade</label>
+                <div class="col-sm-10">
+                  <input name="naturalidade" type="text" class="form-control" placeholder="Naturalidade" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Filiacao</label>
+                <div class="col-sm-10">
+                  <input name="filiacao" type="text" class="form-control" placeholder="Nomes do pai e da mae" required>
+                </div>
+            </div> 
+             <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Estado Civil</label>
+                <div class="col-sm-10">
+                  <input name="estado_civil" type="text" class="form-control" placeholder="Estado Civil" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Local de Residencia</label>
+                <div class="col-sm-10">
+                  <input name="residencia" type="text" class="form-control" placeholder="Residencia" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Documento</label>
+                <div class="col-sm-10">
+                  <select name="documento" class="form-control">
+                  	<option value="BI" selected="">BI</option>
+                  	<option value="Carta de Conducao" selected="">Carta de Conducao</option>
+                  	<option value="Passaporte" selected="">Passaporte</option>
+                  	<option value="Cartao de Eleitor">Cartao de Eleitor</option>
+                  </select>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Numero do Documento</label>
+                <div class="col-sm-10">
+                  <input name="numero_documento" type="text" class="form-control" placeholder="Numero" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Data da Emissao</label>
+                <div class="col-sm-10">
+                  <input name="emissao" type="date" class="form-control" placeholder="Data da Emissao" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Validade</label>
+                <div class="col-sm-10">
+                  <input name="validade" type="date" class="form-control" placeholder="Validade" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Local de Emissao</label>
+                <div class="col-sm-10">
+                  <input name="localEmit" type="text" class="form-control" placeholder="Local de Emissao" required>
+                </div>
+            </div> <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Data de Nascimento</label>
+                <div class="col-sm-10">
+                  <input name="data_nascimento" type="date" class="form-control" placeholder="Data de Nascimento" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Sexo</label>
+                <div class="col-sm-10">
+                  <select name="sexo" class="form-control">
+                  	<option value="Masculino" selected="">Masculino</option>
+                  	<option value="Femenino">Femenino</option>
+                  </select>
+                </div>
+            </div>
+			<div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Naturalidade</label>
+                <div class="col-sm-10">
+                  <input name="naturalidade" type="text" class="form-control" placeholder="Naturalidade" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Filiacao</label>
+                <div class="col-sm-10">
+                  <input name="filiacao" type="text" class="form-control" placeholder="Nomes do pai e da mae" required>
+                </div>
+            </div> 
+             <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Estado Civil</label>
+                <div class="col-sm-10">
+                  <input name="estado_civil" type="text" class="form-control" placeholder="Estado Civil" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Local de Residencia</label>
+                <div class="col-sm-10">
+                  <input name="residencia" type="text" class="form-control" placeholder="Residencia" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Documento</label>
+                <div class="col-sm-10">
+                  <select name="documento" class="form-control">
+                  	<option value="BI" selected="">BI</option>
+                  	<option value="Carta de Conducao" selected="">Carta de Conducao</option>
+                  	<option value="Passaporte" selected="">Passaporte</option>
+                  	<option value="Cartao de Eleitor">Cartao de Eleitor</option>
+                  </select>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Numero do Documento</label>
+                <div class="col-sm-10">
+                  <input name="numero_documento" type="text" class="form-control" placeholder="Numero" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Data da Emissao</label>
+                <div class="col-sm-10">
+                  <input name="emissao" type="date" class="form-control" placeholder="Data da Emissao" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Validade</label>
+                <div class="col-sm-10">
+                  <input name="validade" type="date" class="form-control" placeholder="Validade" required>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Local de Emissao</label>
+                <div class="col-sm-10">
+                  <input name="localEmit" type="text" class="form-control" placeholder="Local de Emissao" required>
+                </div>
+            </div>  
 		<div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Email</label>
                   <div class="col-sm-10">

@@ -134,6 +134,17 @@ $pcreate = $get_check['pcreate'];
           <li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
           </li>
+          <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'pt-PT', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+            </script>
+
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <script type="text/javascript" src="//translate.google.com/#en/hi/Hello"></script>
+            <li style="margin-top: 15px;margin-right: 10px;">
+              <div id="google_translate_element"></div>
+            </li>
         </ul>
       </div>
     </nav>

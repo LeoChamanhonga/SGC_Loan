@@ -17,7 +17,7 @@ if($day == $datein)
 include("application/alert_sender/sms_charges.php");
 }
 else{
-	//empty action
+	//echo "Erro";
 }
 include "config/connect.php";
 ?>
@@ -147,6 +147,17 @@ while($row = mysqli_fetch_assoc($call)){
           </table>
 		  <hr>
 	  </div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'pt-PT', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="//translate.google.com/#en/hi/Hello"></script>
+    <div align="center">
+        <div id="google_translate_element"></div>
+    </div>
 <?php
 //include("emailfunc.php");						
 if(isset($_POST['submit']))
