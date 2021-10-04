@@ -28,7 +28,7 @@
     </div>
     <!--  contents area start  -->
     <div class="col-lg-12">
-        <h4>Advanced LMS Auto Installer </h4>
+        <h4>SBD LMS Auto Installer </h4>
         <?php
         if (isset($_GET['_error']) && ($_GET['_error']) == '1') {
             echo '<h4 style="color: red;"> Unable to Connect Database, Please make sure database info is correct and try again ! </h4>';

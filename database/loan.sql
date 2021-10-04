@@ -78,6 +78,9 @@ CREATE TABLE IF NOT EXISTS `attachment` (
 -- Dumping data for table `attachment`
 --
 
+
+--Atencao, antes de importar para base real, remover esta instrucao
+
 INSERT INTO `attachment` (`id`, `get_id`, `tid`, `attached_file`, `date_time`) VALUES
 (1, '1', 'Loan=1907598678', 'document/4887_File_cryptos documentation.docx', '2017-05-01 12:11:34'),
 (2, '2', 'Loan=21319580', 'document/2782_File_Email.docx', '2017-05-10 16:56:55'),
@@ -101,6 +104,7 @@ CREATE TABLE IF NOT EXISTS `backup` (
 --
 -- Dumping data for table `backup`
 --
+--Atencao, antes de importar para base real, remover esta instrucao
 
 INSERT INTO `backup` (`id`, `tracking_id`, `amount`, `address`, `date_time`) VALUES
 (10, 'Cryptos?rid=782752', '0.1', '134N7BmQZHSj2WU7kUaN8fFada32GpBXbg', '2017-04-03 14:37:40'),
@@ -146,6 +150,7 @@ CREATE TABLE IF NOT EXISTS `battachment` (
 -- Dumping data for table `battachment`
 --
 
+--Atencao, antes de importar para base real, remover esta instrucao
 INSERT INTO `battachment` (`id`, `get_id`, `tid`, `attached_file`, `date_time`) VALUES
 (1, '1', 'Loan=1907598678', 'bdocument/5605_File_Below is the screenshot of the welcome mail sent to me when I registered with namecheap.docx', '2017-05-01 17:30:28'),
 (2, '1', 'Loan=1907598678', 'bdocument/2630_File_Below is the screenshot of the welcome mail sent to me when I registered with namecheap.docx', '2017-05-01 17:32:52'),

@@ -10,13 +10,13 @@
 	<!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        <i class="fa fa-gear"></i>&nbsp;Company Setup
+        <i class="fa fa-gear"></i>&nbsp;Nome da empresa
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active"> <a href="listborrowers.php?id=<?php echo $_SESSION['tid']; ?>">Setup</a></li>
-        <li class="active">Update</li>
+        <li class="active">Actualizar</li>
       </ol>
     </section>
 	

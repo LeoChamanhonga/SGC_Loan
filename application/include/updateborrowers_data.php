@@ -4,7 +4,7 @@
      
 	 <?php echo '<div class="alert alert-warning fade in" >
 			  <a href = "#" class = "close" data-dismiss= "alert"> &times;</a>
-  				<strong>Please Note that&nbsp;</strong> &nbsp;&nbsp;You Must Tick All Added Checkbox Before Clicking on update button below
+  				<strong>Atenção&nbsp;</strong> &nbsp;&nbsp;Deve marcar a opção correta
 				</div>'?>
 	        <div class="box box-success">
             <div class="box-body">
@@ -14,9 +14,9 @@
 			 <div class="col-md-14">
              <div class="nav-tabs-custom">
              <ul class="nav nav-tabs">
-              <li><a href="#tab_1" data-toggle="tab">Personal Information</a></li>
-              <li class="active"><a href="#tab_2" data-toggle="tab">Financial Information</a></li>
-              <li><a href="#tab_3" data-toggle="tab">Attachment</a></li>
+              <li><a href="#tab_1" data-toggle="tab">Informação Pessoal</a></li>
+              <li class="active"><a href="#tab_2" data-toggle="tab">Informação Financeira</a></li>
+              <li><a href="#tab_3" data-toggle="tab">Anexos</a></li>
               </ul>
              <div class="tab-content">
              <div class="tab-pane" id="tab_1">
@@ -30,7 +30,7 @@ while($row = mysqli_fetch_array($select))
              <div class="box-body">
 				
 			<div class="form-group">
-            <label for="" class="col-sm-2 control-label">Your Image</label>
+            <label for="" class="col-sm-2 control-label">Sua Imagem</label>
 			<div class="col-sm-10">
   		  			 <input type='file' name="image" onChange="readURL(this);" />
        				 <img id="blah"  src="../<?php echo $row['image']; ?>" alt="Image Here" height="100" width="100"/>
@@ -38,14 +38,14 @@ while($row = mysqli_fetch_array($select))
 			</div>
 			
 			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">First Name</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Nome</label>
                   <div class="col-sm-10">
                   <input name="fname" type="text" class="form-control" value="<?php echo $row['fname']; ?>" readonly>
                   </div>
                   </div>
 				  
 		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Last Name</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Apelido</label>
                   <div class="col-sm-10">
                   <input name="lname" type="text" class="form-control"  value="<?php echo $row['lname']; ?>" readonly>
                   </div>
@@ -59,22 +59,22 @@ while($row = mysqli_fetch_array($select))
                   </div>
 				  
 		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Mobile Number</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Telemovel</label>
                   <div class="col-sm-10">
                   <input name="mnumber" type="text" class="form-control" value="<?php echo $row['phone']; ?>" readonly>
                   </div>
                   </div>
 				  
 				  
-		 <div class="form-group">
-                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Address 1</label>
+		 	<div class="form-group">
+                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Endereço 1</label>
                   	<div class="col-sm-10">
-					<textarea name="ad1"  class="form-control" rows="4" cols="80" readonly><?php echo $row['addrs1']; ?></textarea>
-           			 </div>
-          </div>
+						<textarea name="ad1"  class="form-control" rows="4" cols="80" readonly><?php echo $row['addrs1']; ?></textarea>
+           			</div>
+          	</div>
 					
 			<div class="form-group">
-                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Address 2</label>
+                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Endereço 2</label>
                   	<div class="col-sm-10">
 					<textarea name="ad2"  class="form-control" rows="4" cols="80" readonly><?php echo $row['fname']; ?></textarea>
            			 </div>
@@ -82,21 +82,21 @@ while($row = mysqli_fetch_array($select))
 			
 			
 			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">City</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Cidade</label>
                   <div class="col-sm-10">
                   <input name="city" type="text" class="form-control"  value="<?php echo $row['city']; ?>" readonly>
                   </div>
                   </div>
 				  
 		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">State</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Provincia</label>
                   <div class="col-sm-10">
                   <input name="state" type="text" class="form-control"  value="<?php echo $row['state']; ?>" readonly>
                   </div>
                   </div>
 				  
 				  <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Zip Code</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Codigo Postal</label>
                   <div class="col-sm-10">
                   <input name="zip" type="text" class="form-control" value="<?php echo $row['zip']; ?>" readonly>
                   </div>
@@ -357,14 +357,14 @@ while($row = mysqli_fetch_array($select))
 									 
 									 
 				<div class="form-group">
-                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Comment</label>
+                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Comentarios</label>
                   	<div class="col-sm-10">
 					<textarea name="comment"  class="form-control" rows="4" cols="80" readonly><?php echo $row['comment']; ?></textarea>
            			 </div>
           	</div>
 			
 			 <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Account Number</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Numero de Conta</label>
                   <div class="col-sm-10">
                   <input name="account_no" type="text" class="form-control"  value="<?php echo $row['account']; ?>" readonly>
                   </div>
@@ -375,7 +375,7 @@ while($row = mysqli_fetch_array($select))
 			  <div align="right">
               <div class="box-footer">
                 				<button type="reset" class="btn btn-primary btn-flat"><i class="fa fa-times">&nbsp;Reset</i></button>
-                				<button name="save" type="submit" class="btn btn-success btn-flat"><i class="fa fa-save">&nbsp;Save</i></button>
+                				<button name="save" type="submit" class="btn btn-success btn-flat"><i class="fa fa-save">&nbsp;Gravar</i></button>
 
               </div>
 			  </div>
@@ -388,8 +388,8 @@ while($row = mysqli_fetch_array($select))
  <form method="post">
 			 	<table>
 				<th></th>
-				<th align="center" width="400">Occupation</th>
-				<th align="center" width="300">Monthly Income</th>
+				<th align="center" width="400">Ocupação</th>
+				<th align="center" width="300">Ganhos Mensais</th>
                 <tbody> 
 <?php
 $id = $_GET['id'];
@@ -400,16 +400,16 @@ $idme= $have['id'];
 ?>			
 				<tr>
 				<td width="30"><input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?php echo $idme; ?>" checked></td>
-                <td width="800"><input name="occupation[]" type="text" class="form-control" placeholder="Occupation" value="<?php echo $have['occupation']; ?>"></td>
-                <td width="300"><input name="mincome[]" type="number" class="form-control" placeholder="Amount" value="<?php echo $have['mincome']; ?>"></td>
+                <td width="800"><input name="occupation[]" type="text" class="form-control" placeholder="Ocupação" value="<?php echo $have['occupation']; ?>"></td>
+                <td width="300"><input name="mincome[]" type="number" class="form-control" placeholder="Valor" value="<?php echo $have['mincome']; ?>"></td>
 				</tr>
 <?php } ?>
 				</tbody>
                 </table>
 <div align="left">
               <div class="box-footer">
-                				<button type="submit" class="btn btn-success btn-flat" name="add_fees_rows"><i class="fa fa-plus">&nbsp;Add Row</i></button>
-                				<button name="delrow" type="submit" class="btn btn-danger btn-flat"><i class="fa fa-trash">&nbsp;Delete Row</i></button>
+                <button type="submit" class="btn btn-success btn-flat" name="add_fees_rows"><i class="fa fa-plus">&nbsp;Adicionar</i></button>
+                <button name="delrow" type="submit" class="btn btn-danger btn-flat"><i class="fa fa-trash">&nbsp;Apagar</i></button>
 
               </div>
 			  </div>
@@ -450,7 +450,7 @@ echo "<script>window.location='updateborrowers.php?id=".$id."&&mid=".base64_enco
 ?>
 <div align="right">
               <div class="box-footer">
-               <button type="submit" class="btn btn-info btn-flat" name="add_fees"><i class="fa fa-save">&nbsp;Update Additional Fees</i></button>
+               <button type="submit" class="btn btn-info btn-flat" name="add_fees"><i class="fa fa-save">&nbsp;Actualizar Taxas</i></button>
 
               </div>
 			  </div>
@@ -473,10 +473,10 @@ $update = mysqli_query($link, "UPDATE fin_info SET occupation = '$fee', mincome 
 $i++;
 if(!$update)
 {
-echo "<script>alert('Record not inserted.....Please try again later!'); </script>";
+echo "<script>alert('Não inserido..Tente mas tarde!'); </script>";
 }
 else{
-echo "<script>alert('Additional Fees/Payment Info Added Successfully!!'); </script>";
+echo "<script>alert('Informação de Pagamento actualizada!!'); </script>";
 echo "<script>window.location='updateborrowers.php?id=".$idm."&&mid=".base64_encode("403")."'; </script>";
 }
 }
@@ -486,11 +486,11 @@ echo "<script>window.location='updateborrowers.php?id=".$idm."&&mid=".base64_enc
 				</form>
               </div>
               <!-- /.tab-pane -->
-              <div class="tab-pane" id="tab_3">
-               <form class="form-horizontal" method="post" enctype="multipart/form-data">
+              	<div class="tab-pane" id="tab_3">
+               		<form class="form-horizontal" method="post" enctype="multipart/form-data">
 
-                Attachments
-Accepted file types <span style="color:#FF0000">jpg, gif, png, xls, xlsx, csv, doc, docx, pdf</span>
+                Anexos
+Aceitaveis <span style="color:#FF0000">jpg, gif, png, xls, xlsx, csv, doc, docx, pdf</span>
 			 <input name="uploaded_file" type="file" class="btn btn-info">
 			 <div align="left">
               <div class="box-footer">
@@ -531,7 +531,7 @@ if(!$insert)
 echo "<script>alert('Record not inserted.....Please try again later!'); </script>";
 }
 else{
-echo "<script>alert('Documents Added Successfully!!'); </script>";
+echo "<script>alert('Documentos adcionados com Sucesso!!'); </script>";
 echo "<script>window.location='listborrowers.php?id=".$_SESSION['tid']."'; </script>";
 }
 }

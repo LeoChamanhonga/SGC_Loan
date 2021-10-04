@@ -17,7 +17,7 @@ if($day == $datein)
 include("application/alert_sender/sms_charges.php");
 }
 else{
-	//empty action
+	//echo "Erro";
 }
 include "config/connect.php";
 ?>
@@ -99,12 +99,12 @@ while($row = mysqli_fetch_assoc($call)){
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Please sign in here</p>
+    <p class="login-box-msg">Entrar </p>
 
     <form class="form"  method="post" enctype="multipart/form-data">
 	
       <div class="form-group has-feedback">
-        <input name="username" type="text" class="form-control" placeholder="Username/Email Address" required>
+        <input name="username" type="text" class="form-control" placeholder="Username/Email" required>
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
@@ -126,7 +126,7 @@ while($row = mysqli_fetch_assoc($call)){
               <td colspan="2"><div align="center"><strong>Admin Login Details </strong></div></td>
             </tr>
             <tr>
-              <td width="75">Username:</td>
+              <td width="75">Utilizador:</td>
               <td width="174"><span class="style1"> admin</span></td>
             </tr>
             <tr>
@@ -137,7 +137,7 @@ while($row = mysqli_fetch_assoc($call)){
               <td colspan="2"><div align="center"><strong>Staff Login Details </strong></div></td>
             </tr>
             <tr>
-              <td>Username:</td>
+              <td>Utilizador:</td>
               <td><span class="style1">at</span></td>
             </tr>
             <tr>
@@ -147,6 +147,17 @@ while($row = mysqli_fetch_assoc($call)){
           </table>
 		  <hr>
 	  </div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'pt-PT', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="//translate.google.com/#en/hi/Hello"></script>
+    <div align="center">
+        <div id="google_translate_element"></div>
+    </div>
 <?php
 //include("emailfunc.php");						
 if(isset($_POST['submit']))

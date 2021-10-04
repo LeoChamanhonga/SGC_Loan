@@ -61,7 +61,7 @@ elseif(file_exists($target_file))
 	echo '<br>';
 	echo'<span class="itext" style="color: #FF0000">Já Existe.</span>';
 }
-elseif($_FILES["image"]["size"] > 500000)
+elseif($_FILES["image"]["size"] > 5000000)
 {
 	echo '<meta http-equiv="refresh" content="2;url=view_emp.php?tid='.$id.'&&mid='.base64_encode("409").'">';
 	echo '<br>';
@@ -114,15 +114,15 @@ $account = '013'.rand(1000000,10000000);
                   <div class="col-sm-10">
                   <input name="fname" type="text" class="form-control" placeholder="Nome" required>
                   </div>
-                  </div>
+            </div>
 				  
-		<div class="form-group">
+			<div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Apelido</label>
-                  <div class="col-sm-10">
+                <div class="col-sm-10">
                   <input name="lname" type="text" class="form-control" placeholder="Apelido" required>
-                  </div>
-                  </div>
-				  <div class="form-group">
+                </div>
+            </div>
+            <div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Data de Nascimento</label>
                 <div class="col-sm-10">
                   <input name="data_nascimento" type="date" class="form-control" placeholder="Data de Nascimento" required>
@@ -195,80 +195,7 @@ $account = '013'.rand(1000000,10000000);
                 <div class="col-sm-10">
                   <input name="localEmit" type="text" class="form-control" placeholder="Local de Emissao" required>
                 </div>
-            </div> <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Data de Nascimento</label>
-                <div class="col-sm-10">
-                  <input name="data_nascimento" type="date" class="form-control" placeholder="Data de Nascimento" required>
-                </div>
             </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Sexo</label>
-                <div class="col-sm-10">
-                  <select name="sexo" class="form-control">
-                  	<option value="Masculino" selected="">Masculino</option>
-                  	<option value="Femenino">Femenino</option>
-                  </select>
-                </div>
-            </div>
-			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Naturalidade</label>
-                <div class="col-sm-10">
-                  <input name="naturalidade" type="text" class="form-control" placeholder="Naturalidade" required>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Filiacao</label>
-                <div class="col-sm-10">
-                  <input name="filiacao" type="text" class="form-control" placeholder="Nomes do pai e da mae" required>
-                </div>
-            </div> 
-             <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Estado Civil</label>
-                <div class="col-sm-10">
-                  <input name="estado_civil" type="text" class="form-control" placeholder="Estado Civil" required>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Local de Residencia</label>
-                <div class="col-sm-10">
-                  <input name="residencia" type="text" class="form-control" placeholder="Residencia" required>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Documento</label>
-                <div class="col-sm-10">
-                  <select name="documento" class="form-control">
-                  	<option value="BI" selected="">BI</option>
-                  	<option value="Carta de Conducao" selected="">Carta de Conducao</option>
-                  	<option value="Passaporte" selected="">Passaporte</option>
-                  	<option value="Cartao de Eleitor">Cartao de Eleitor</option>
-                  </select>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Numero do Documento</label>
-                <div class="col-sm-10">
-                  <input name="numero_documento" type="text" class="form-control" placeholder="Numero" required>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Data da Emissao</label>
-                <div class="col-sm-10">
-                  <input name="emissao" type="date" class="form-control" placeholder="Data da Emissao" required>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Validade</label>
-                <div class="col-sm-10">
-                  <input name="validade" type="date" class="form-control" placeholder="Validade" required>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Local de Emissao</label>
-                <div class="col-sm-10">
-                  <input name="localEmit" type="text" class="form-control" placeholder="Local de Emissao" required>
-                </div>
-            </div>  
 		<div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Email</label>
                   <div class="col-sm-10">
@@ -318,7 +245,7 @@ $account = '013'.rand(1000000,10000000);
 				  
 		<div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Pais</label>
-                <div class="col-sm-10">
+                  <div class="col-sm-10">
 				<select name="country"  class="form-control" required>
 										<option value="">Selecione Pais&hellip;</option>
 										<option value="AX">&#197;land Islands</option>
@@ -413,7 +340,7 @@ $account = '013'.rand(1000000,10000000);
 										<option value="ZW">Zimbabwe</option>
 									</select>                 
 									</div>
-                </div>
+                 					</div>
 									 
 									 
 				<div class="form-group">
@@ -424,11 +351,11 @@ $account = '013'.rand(1000000,10000000);
 			 </div>
 			 
 			  <div align="right">
-              	<div class="box-footer">
-                	<button type="reset" class="btn btn-primary btn-flat"><i class="fa fa-times">&nbsp;Reset</i></button>
-                	<button name="save" type="submit" class="btn btn-success btn-flat"><i class="fa fa-save">&nbsp;Gravar</i></button>
+              <div class="box-footer">
+                				<button type="reset" class="btn btn-primary btn-flat"><i class="fa fa-times">&nbsp;Reset</i></button>
+                				<button name="save" type="submit" class="btn btn-success btn-flat"><i class="fa fa-save">&nbsp;Gravar</i></button>
 
-             		 </div>
+              </div>
 			  </div>
 
 			 </form> 

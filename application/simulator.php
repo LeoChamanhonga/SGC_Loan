@@ -10,19 +10,21 @@
 	<!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Email Template
+        Simulador
         <small>Painel de Control</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active"> <a href="listemail.php?id=<?php echo $_SESSION['tid']; ?>">emplate de Email</a></li>
-        <li class="active">Create</li>
+        <li class="active"> <a href="listpayments.php?id=<?php echo $_SESSION['tid']; ?>">Simulador de Credito</a></li>
+        <li class="active">Criar</li>
       </ol>
     </section>
 	
+	
     <section class="content">
-		<?php include("include/newemail_data.php"); ?>
+		<?php include("include/simulador_data.php"); ?>
 	</section>
 </div>	
 
-<?php include("include/footer.php"); ?>
+
+<?php include ("include/footer.php"); ?>

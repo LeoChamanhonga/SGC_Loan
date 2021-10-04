@@ -1,0 +1,78 @@
+<div class ="box"  >
+
+<?php
+$amout=$interest_rate=$perid=NULL;
+$total_interest=$total_payable=$monthly_payable=0;
+if (isset($_POST['simular'])){
+    $amout=$_POST['amout'];
+    $interest_rate=$_POST['interest_rate'];
+    $perid=$_POST['perid'];
+
+    $total_interest=$amout*($interest_rate/100)*$perid;
+    $total_payable=$total_interest+$amout;
+    $monthly_payable=$total_payable/$perid;
+
+}
+?>
+
+    <div class="form-group">
+        <label for="" class="col-sm-2 control-label" style="color:#009900">Tipo de Credito</label>
+            <div class="col-sm-10">
+               <select name="credittype" class="form-control" required>
+                   <option value="CARC">CARC</option>
+                   <option value="CARC">Habitacao</option>
+                   <option value="CARC">Consumo</option>
+               </select>
+            </div>
+    </div>
+
+    <div class="form-group" >
+        <label for="" class="col-sm-2 control-label" style="color:#009900">Valor</label>
+        <div class="col-sm-10">
+            <input name="amount" type="number" class="form-control" placeholder="Valor do Financimento" name="amout" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="" class="col-sm-2 control-label" style="color:#009900">Periodo de Vigencia</label>
+        <div class="col-sm-10">
+            <input name="amount" type="number" class="form-control" placeholder="Periodo de Vigencia" name="perid" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="" class="col-sm-2 control-label" style="color:#009900">Taxa de Juros</label>
+        <div class="col-sm-10">
+            <input name="amount" type="text" class="form-control" placeholder="Taxa de Juro" name="interest_rate" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="" class="col-sm-2 control-label" style="color:#009900">Taxa de Desconto</label>
+        <div class="col-sm-10">
+            <input name="amount" type="text" class="form-control" placeholder="Rendimento Mensal" required>
+        </div>
+    </div>
+		
+
+    <div justify-content-center>
+        Valor Emprestimo: <?=number_format($amout, +2);?></br>
+        Total de Juros: <?=number_format($total_interest, +2);?></br>
+        Total Apagar: <?=number_format($total_payable, +2);?></br>
+        Valor Mensal: <?=number_format($monthly_payable, +2);?></br>
+
+    
+    </div>
+        <p input type="submit" name="simular" value="Simular"></p> 
+
+    
+
+    <div align="right">
+              	<div class="box-footer">
+                	<button type="submit" class="btn btn-primary btn-flat" name="simular"><i class="fa fa-times">&nbsp;Simular</i></button>
+                	<button name="save" type="submit" class="btn btn-success btn-flat"><i class="fa fa-save">&nbsp;Gravar</i></button>
+
+             		 </div>
+			  </div>
+
+</div>

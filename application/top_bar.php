@@ -11,7 +11,7 @@
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">Fechar Navegador</span>
       </a>
 
       <div class="navbar-custom-menu">
@@ -69,7 +69,7 @@
 			$call = mysqli_query($link, "SELECT * FROM user WHERE id = '$id'");
 			if(mysqli_num_rows($call) == 0)
 			{
-			echo "<script>alert('Data Not Found!'); </script>";
+			echo "<script>alert('Dado nao encontrado!'); </script>";
 			}
 			else
 			{
@@ -95,11 +95,11 @@
                 <div class="row">
                   <div class="col-xs-4 text-center">
 				 
-                    <a href="profile.php?id=<?php echo $_SESSION['tid']; ?>">Profile</a>
+                    <a href="profile.php?id=<?php echo $_SESSION['tid']; ?>">Perfil</a>
 					
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="listborrowers.php?id=<?php echo $_SESSION['tid']; ?>">Contacts</a>
+                    <a href="listborrowers.php?id=<?php echo $_SESSION['tid']; ?>">Contactos</a>
                   </div>
                   <div class="col-xs-4 text-center">
                     <a href="inboxmessage.php?id=<?php echo $_SESSION['tid']; ?>">Mailbox</a>
@@ -110,7 +110,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
- 				<a href="inboxmessage.php?id=<?php echo $_SESSION['tid']; ?>" class="btn btn-info btn-flat">Message</a>                </div>
+ 				<a href="inboxmessage.php?id=<?php echo $_SESSION['tid']; ?>" class="btn btn-info btn-flat">Mesagem</a>                </div>
                 <div class="pull-right">
                   <a href="../logout.php" class="btn btn-warning btn-flat"><i class="fa fa-sign-out"></i>Sign out</a>
                 </div>

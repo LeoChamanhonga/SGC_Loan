@@ -10,13 +10,13 @@
 	<!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        List of Borrowers
+        Lista de Mutuários
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active"> <a href="listborrowers.php?id=<?php echo $_SESSION['tid']; ?>">Borrowers</a></li>
-        <li class="active">Add</li>
+        <li class="active"> <a href="listborrowers.php?id=<?php echo $_SESSION['tid']; ?>">Mutuários</a></li>
+        <li class="active">Adiconar</li>
       </ol>
     </section>
 	

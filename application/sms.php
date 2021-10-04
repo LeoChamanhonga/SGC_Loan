@@ -20,8 +20,8 @@
       </ol>
 	
 <div class="alert alert-info">
-          <p class="fa fa-hand-o-right">&nbsp;&nbsp;Update SMS Gateway Settings Here</p><br>
-		  <p class="fa fa-hand-o-right">&nbsp;&nbsp;<strong><a href="https://sms.critechglobal.com" class="btn btn-success" target="_blank">Click here</a></strong> to Register with <b>CriTech::SMS</b> for the SMS SETTING DETAILS
+          <p class="fa fa-hand-o-right">&nbsp;&nbsp;Actualizar Gatway de SMS</p><br>
+		  <p class="fa fa-hand-o-right">&nbsp;&nbsp;<strong><a href="https://sms.critechglobal.com" class="btn btn-success" target="_blank">Click Aqui</a></strong> Para Registar<b>SBD::SMS</b> para detalhes da Config. SMS
 		  <?php 
 $call = mysqli_query($link, "SELECT * FROM sms");
 if(mysqli_num_rows($call) == 0)

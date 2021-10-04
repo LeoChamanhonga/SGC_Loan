@@ -10,13 +10,13 @@
 	<!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-       Reply Message
+       Responder Mensagwm
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active"> <a href="listmessage.php?id=<?php echo $_SESSION['tid']; ?>">Message</a></li>
-        <li class="active">Reply</li>
+        <li class="active"> <a href="listmessage.php?id=<?php echo $_SESSION['tid']; ?>">Mesagem</a></li>
+        <li class="active">Responder</li>
       </ol>
     </section>
     <section class="content">

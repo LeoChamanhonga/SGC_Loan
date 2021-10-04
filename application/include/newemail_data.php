@@ -3,7 +3,7 @@
 	        <div class="box-body">
 			<div class="panel panel-success">
             <div class="panel-heading">
-            <h3 class="panel-title"><i class="fa fa-mail-reply-all"></i> New Email</h3>
+            <h3 class="panel-title"><i class="fa fa-mail-reply-all"></i> Novo Email</h3>
             </div>
              <div class="box-body">
 				<form class="form-horizontal" method="post" enctype="multipart/form-data">

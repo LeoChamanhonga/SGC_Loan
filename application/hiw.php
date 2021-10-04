@@ -134,7 +134,7 @@ while($row = mysqli_fetch_assoc($call)){
 			$call = mysqli_query($link, "SELECT * FROM user WHERE id = '$id'");
 			if(mysqli_num_rows($call) == 0)
 			{
-			echo "<script>alert('Data Not Found!'); </script>";
+			echo "<script>alert('Sem Dados!'); </script>";
 			}
 			else
 			{
@@ -160,14 +160,14 @@ while($row = mysqli_fetch_assoc($call)){
                 <div class="row">
                   <div class="col-xs-4 text-center">
 				 
-                    <a href="profile.php?id=<?php echo $_SESSION['tid']; ?>">Profile</a>
+                    <a href="profile.php?id=<?php echo $_SESSION['tid']; ?>">Perfil</a>
 					
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="listborrowers.php?id=<?php echo $_SESSION['tid']; ?>">Contacts</a>
+                    <a href="listborrowers.php?id=<?php echo $_SESSION['tid']; ?>">Contactos</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="inboxmessage.php?id=<?php echo $_SESSION['tid']; ?>">Mailbox</a>
+                    <a href="inboxmessage.php?id=<?php echo $_SESSION['tid']; ?>">Caixa de Entrada</a>
                   </div>
                 </div>
                 <!-- /.row -->
@@ -175,9 +175,9 @@ while($row = mysqli_fetch_assoc($call)){
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
- 				<a href="inboxmessage.php?id=<?php echo $_SESSION['tid']; ?>" class="btn btn-info btn-flat">Message</a>                </div>
+ 				<a href="inboxmessage.php?id=<?php echo $_SESSION['tid']; ?>" class="btn btn-info btn-flat">Mensagem</a>                </div>
                 <div class="pull-right">
-                  <a href="../logout.php" class="btn btn-warning btn-flat"><i class="fa fa-sign-out"></i>Sign out</a>
+                  <a href="../logout.php" class="btn btn-warning btn-flat"><i class="fa fa-sign-out"></i>Sair</a>
                 </div>
               </li>
             </ul>
@@ -236,100 +236,100 @@ while($row = mysqli_fetch_assoc($call)){
 			
 			?>
       <ul class="sidebar-menu">
-        <li class="header">MAIN NAVIGATION</li>
+        <li class="header">NAVEGADOR 33 PRINCIPAL</li>
 		<li><a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-dashboard"></i> <span>Dashbord</span></a></li>
 		
 		<li class="treeview ">
           <a href="#">
-            <i class="fa fa-book"></i> <span>Email Templates</span>
+            <i class="fa fa-book"></i> <span>Templates de Email</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
- 			<li class="active"><a href="newemail.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i> New Email</a></li>
-            <li><a href="listemail.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>List Email</a></li>
+ 			<li class="active"><a href="newemail.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i> Novo Email</a></li>
+            <li><a href="listemail.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>Lista de Email</a></li>
           </ul>
         </li>  
 		
 		
 		<li class="treeview">
           <a href="#">
-            <i class="fa fa-users"></i> <span>Borrowers</span>
+            <i class="fa fa-users"></i> <span>Mutuários</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
- 			<li><a href="newborrowers.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i> New Borrowers</a></li>
-            <li><a href="listborrowers.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>List Borrowers</a></li>
+ 			<li><a href="newborrowers.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i> Novos Mutuários</a></li>
+            <li><a href="listborrowers.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>Lista Mutuários</a></li>
           </ul>
         </li>  
 		
-	<li><a href="mywallet.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-book"></i> <span>My Wallet</span></a></li>
+	<li><a href="mywallet.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-book"></i> <span>Minha Carteira</span></a></li>
 
 		<li class="treeview">
           <a href="#">
-            <i class="fa fa-dollar"></i> <span>Loans</span>
+            <i class="fa fa-dollar"></i> <span>Emprestimos</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
- 			<li class="active"><a href="newloans.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i> New Loans</a></li>
-            <li><a href="listloans.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>List Loans</a></li>
+ 			<li class="active"><a href="newloans.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i> Novos Emprestimos</a></li>
+            <li><a href="listloans.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>Lista de Emprestimos</a></li>
           </ul>
         </li>  
 		
 		
 		<li class="treeview">
           <a href="#">
-            <i class="fa fa-book"></i> <span>Message</span>
+            <i class="fa fa-book"></i> <span>Mensagem</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
- 			<li class="active"><a href="newmessage.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i> New Message</a></li>
-            <li><a href="inboxmessage.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>Inbox Message</a></li>
-            <li><a href="outboxmessage.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>Outbox Message</a></li>
+ 			<li class="active"><a href="newmessage.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i> Novo Mensagem</a></li>
+            <li><a href="inboxmessage.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>Caixa de Entrada</a></li>
+            <li><a href="outboxmessage.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>Caixa de Saida</a></li>
           </ul>
         </li>  
 		
-		<li><a href="missedpayment.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-dollar"></i> <span>Missed Payment</span></a></li>		
+		<li><a href="missedpayment.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-dollar"></i> <span>Pagamentos em Atrazo</span></a></li>		
 				
          <li class="treeview">
           <a href="#">
-            <i class="fa fa-dollar"></i> <span>Payments</span>
+            <i class="fa fa-dollar"></i> <span>Pagamentos</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
- 			<li class="active"><a href="newpayments.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i> New Payment</a></li>
-            <li><a href="listpayment.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>List Payments</a></li>
+ 			<li class="active"><a href="newpayments.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i> Novos Pagamentos</a></li>
+            <li><a href="listpayment.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>Lista de Pagamentos</a></li>
           </ul>
         </li>  
 		
 		
 		 <li class="treeview">
           <a href="#">
-            <i class="fa fa-user"></i> <span>Employee</span>
+            <i class="fa fa-user"></i> <span>Funcionários</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
- 			<li class="active"><a href="newemployee.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i> New Employee</a></li>
-            <li><a href="listemployee.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>List Employee</a></li>
+ 			<li class="active"><a href="newemployee.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i> Novo Funcionário</a></li>
+            <li><a href="listemployee.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-circle-o"></i>Lista Funcionários</a></li>
           </ul>
         </li>  
 		
-		<li><a href="savings.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-money"></i> <span>Savings Account</span></a></li>
+		<li><a href="savings.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-money"></i> <span>Conta Poupança</span></a></li>
 		
 		<li class="treeview active">
           <a href="#">
-            <i class="fa fa-gear"></i> <span>General Settings</span>
+            <i class="fa fa-gear"></i> <span>Configuraçao</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -555,7 +555,7 @@ while ($row=mysqli_fetch_array($result))
 
           <div class="form-group">
             <label class="control-sidebar-subheading">
-              Show me as online
+              Me mostrar me ONLINE
               <input type="checkbox" class="pull-right" checked>
             </label>
           </div>

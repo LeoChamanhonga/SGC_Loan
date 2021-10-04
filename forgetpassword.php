@@ -64,7 +64,7 @@ while ($row=mysqli_fetch_array($result))
   </div>
   
   <!-- User name -->
-  <div class="lockscreen-name">Recover password</div>
+  <div class="lockscreen-name">Recuperar Senha</div>
 
   <!-- START LOCK SCREEN ITEM -->
   <div class="lockscreen-item">

@@ -5,7 +5,7 @@
               <div class="table-responsive">
              <div class="box-body">
 <form method="post">
-	<a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>"><button type="button" class="btn btn-flat btn-warning"><i class="fa fa-mail-reply-all"></i>&nbsp;Back</button> </a> 
+	<a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>"><button type="button" class="btn btn-flat btn-warning"><i class="fa fa-mail-reply-all"></i>&nbsp;Voltar</button> </a> 
 <?php
 $check = mysqli_query($link, "SELECT * FROM emp_permission WHERE tid = '".$_SESSION['tid']."' AND module_name = 'Employee Wallet'") or die ("Error" . mysqli_error($link));
 $get_check = mysqli_fetch_array($check);
@@ -13,10 +13,10 @@ $pdelete = $get_check['pdelete'];
 $pcreate = $get_check['pcreate'];
 $pupdate = $get_check['pupdate'];
 ?>
-	<?php echo ($pdelete == '1') ? '<button type="submit" class="btn btn-flat btn-danger" name="delete"><i class="fa fa-times"></i>&nbsp;Multiple Delete</button>' : ''; ?>
-	<?php echo ($pupdate == '1') ? '<button data-target= "#c" data-toggle="modal" type="button" class="btn btn-flat btn-info"><i class="fa fa-dollar"></i>&nbsp;Transfer Money</button>' : ''; ?>
-	<?php echo ($pcreate == '1') ? '<button data-target= "#b" data-toggle="modal" type="button" class="btn btn-flat btn-success"><i class="fa fa-plus"></i>&nbsp;Add New Wallet</button>' : ''; ?>
-	<button type="button" class="btn btn-flat btn-info" disabled>&nbsp;Total Wallets:&nbsp;
+	<?php echo ($pdelete == '1') ? '<button type="submit" class="btn btn-flat btn-danger" name="delete"><i class="fa fa-times"></i>&nbsp;Apagar Multiplos</button>' : ''; ?>
+	<?php echo ($pupdate == '1') ? '<button data-target= "#c" data-toggle="modal" type="button" class="btn btn-flat btn-info"><i class="fa fa-dollar"></i>&nbsp;Transferencia</button>' : ''; ?>
+	<?php echo ($pcreate == '1') ? '<button data-target= "#b" data-toggle="modal" type="button" class="btn btn-flat btn-success"><i class="fa fa-plus"></i>&nbsp;Adicionar carteira</button>' : ''; ?>
+	<button type="button" class="btn btn-flat btn-info" disabled>&nbsp;Total de Carteiras:&nbsp;
 <strong class="alert alert-success">
 <?php
 $tid = $_SESSION['tid'];
@@ -47,11 +47,11 @@ echo $currency.number_format($row['Total'],2,".",",")."</b>";
                 <tr>
                   <th><input type="checkbox" id="select_all"/></th>
                   <th>ID</th>
-                  <th>Amount</th>
-				  <th>descriptions</th>
-                  <th>Wallet Type</th>
-                  <th>Transaction Date</th>
-                  <th>Actions</th>
+                  <th>Valor</th>
+				  <th>Descriçao</th>
+                  <th>Tipo de Emprestimo</th>
+                  <th>Dia de Transaç</th>
+                  <th>Acçao</th>
                  </tr>
                 </thead>
                 <tbody> 
@@ -60,7 +60,7 @@ $tid = $_SESSION['tid'];
 $select = mysqli_query($link, "SELECT * FROM mywallet WHERE tid = '$tid'") or die (mysqli_error($link));
 if(mysqli_num_rows($select)==0)
 {
-echo "<div class='alert alert-info'>No data found yet!.....Check back later!!</div>";
+echo "<div class='alert alert-info'>Sem Dados!.....Veja mas tarde!!</div>";
 }
 else{
 while($row = mysqli_fetch_array($select))
@@ -82,12 +82,12 @@ $tdate = $row['tdate'];
 if($wtype == "transfer" || $wtype == "debit")
 {
 ?>
-				<td><?php echo ($pdelete == '1') ? '<a href="#d'.$id.'"><button data-target= "#d'.$id.'" data-toggle="modal" type="button" class="btn btn-flat btn-danger"><i class="fa fa-trash"></i>&nbsp;Delete</button></a>' : ''; ?></td>	
+				<td><?php echo ($pdelete == '1') ? '<a href="#d'.$id.'"><button data-target= "#d'.$id.'" data-toggle="modal" type="button" class="btn btn-flat btn-danger"><i class="fa fa-trash"></i>&nbsp;Apagar</button></a>' : ''; ?></td>	
 <?php
 }
 else{
 ?>
-    			<td><?php echo ($pdelete == '1') ? '<button data-target= "#c" data-toggle="modal" type="button" class="btn btn-flat btn-danger" disabled="disabled"><i class="fa fa-trash"></i>&nbsp;Delete</button>' : ''; ?></td>
+    			<td><?php echo ($pdelete == '1') ? '<button data-target= "#c" data-toggle="modal" type="button" class="btn btn-flat btn-danger" disabled="disabled"><i class="fa fa-trash"></i>&nbsp;Apagar</button>' : ''; ?></td>
 <?php } ?>
 			    </tr>
 <?php } } ?>
@@ -100,14 +100,14 @@ else{
 							$id=$_POST['selector'];
 							$N = count($id);
 						if($id == ''){
-						echo "<script>alert('Row Not Selected!!!'); </script>";	
+						echo "<script>alert('Nenhuma Linha selecionada!!!'); </script>";	
 						echo "<script>window.location='mywallet.php?id=".$_SESSION['tid']."'; </script>";
 							}
 							else{
 							for($i=0; $i < $N; $i++)
 							{
 								$result = mysqli_query($link,"DELETE FROM mywallet WHERE id ='$id[$i]'");
-								echo "<script>alert('Row Delete Successfully!!!'); </script>";
+								echo "<script>alert('Linha deletada!!!'); </script>";
 								echo "<script>window.location='mywallet.php?id=".$_SESSION['tid']."'; </script>";
 							}
 							}

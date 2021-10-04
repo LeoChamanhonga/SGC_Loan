@@ -42,7 +42,7 @@
 	
  echo '<meta http-equiv="refresh" content="2;url=index.php">';
 echo '<br>';
-echo'<span class="itext" style="color: #FF0000">Logging Out. Please Wait!...</span>';
+echo'<span class="itext" style="color: #FF0000">A Sair. Espere Por Favor!...</span>';
 ?>
 </div>
 </body>
