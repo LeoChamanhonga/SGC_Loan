@@ -10,7 +10,7 @@
 	<!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-       My Wallet
+       Tipos de Credito
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">

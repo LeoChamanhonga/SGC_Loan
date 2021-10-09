@@ -195,12 +195,6 @@ $account = '013'.rand(1000000,10000000);
                 <div class="col-sm-10">
                   <input name="localEmit" type="text" class="form-control" placeholder="Local de Emissao" required>
                 </div>
-            </div> <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Data de Nascimento</label>
-                <div class="col-sm-10">
-                  <input name="data_nascimento" type="date" class="form-control" placeholder="Data de Nascimento" required>
-                </div>
-            </div>
             <div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Sexo</label>
                 <div class="col-sm-10">
@@ -317,7 +311,7 @@ $account = '013'.rand(1000000,10000000);
                   </div>
 				  
 		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Pais</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Provincia</label>
                 <div class="col-sm-10">
 				<select name="country"  class="form-control" required>
 										<option value="">Selecione Pais&hellip;</option>
@@ -339,78 +333,6 @@ $account = '013'.rand(1000000,10000000);
 										<option value="NU">Niue</option>
 										<option value="NF">Norfolk Island</option>
 										<option value="KP">North Korea</option>
-										<option value="NO">Norway</option>
-										<option value="OM">Oman</option>
-										<option value="PK">Pakistan</option>
-										<option value="PS">Palestinian Territory</option>
-										<option value="PA">Panama</option>
-										<option value="PG">Papua New Guinea</option>
-										<option value="PY">Paraguay</option>
-										<option value="PE">Peru</option>
-										<option value="PH">Philippines</option>
-										<option value="PN">Pitcairn</option>
-										<option value="PL">Poland</option>
-										<option value="PT">Portugal</option>
-										<option value="QA">Qatar</option>
-										<option value="IE">Republic of Ireland</option>
-										<option value="RE">Reunion</option>
-										<option value="RO">Romania</option>
-										<option value="RU">Russia</option>
-										<option value="RW">Rwanda</option>
-										<option value="ST">S&atilde;o Tom&eacute; and Pr&iacute;ncipe</option>
-										<option value="BL">Saint Barth&eacute;lemy</option>
-										<option value="SH">Saint Helena</option>
-										<option value="KN">Saint Kitts and Nevis</option>
-										<option value="LC">Saint Lucia</option>
-										<option value="SX">Saint Martin (Dutch part)</option>
-										<option value="MF">Saint Martin (French part)</option>
-										<option value="PM">Saint Pierre and Miquelon</option>
-										<option value="VC">Saint Vincent and the Grenadines</option>
-										<option value="SM">San Marino</option>
-										<option value="SA">Saudi Arabia</option>
-										<option value="SN">Senegal</option>
-										<option value="RS">Serbia</option>
-										<option value="SC">Seychelles</option>
-										<option value="SL">Sierra Leone</option>
-										<option value="SG">Singapore</option>
-										<option value="SK">Slovakia</option>
-										<option value="SI">Slovenia</option>
-										<option value="SB">Solomon Islands</option>
-										<option value="SO">Somalia</option>
-										<option value="ZA">South Africa</option>
-										<option value="GS">South Georgia/Sandwich Islands</option>
-										<option value="KR">South Korea</option>
-										<option value="SS">South Sudan</option>
-										<option value="ES">Spain</option>
-										<option value="LK">Sri Lanka</option>
-										<option value="SD">Sudan</option>
-										<option value="SR">Suriname</option>
-										<option value="SJ">Svalbard and Jan Mayen</option>
-										<option value="SZ">Swaziland</option>
-										<option value="SE">Sweden</option>
-										<option value="CH">Switzerland</option>
-										<option value="SY">Syria</option>
-										<option value="TW">Taiwan</option>
-										<option value="TJ">Tajikistan</option>
-										<option value="TZ">Tanzania</option>
-										<option value="TH">Thailand</option>
-										<option value="TL">Timor-Leste</option>
-										<option value="TG">Togo</option>
-										<option value="TK">Tokelau</option>
-										<option value="TO">Tonga</option>
-										<option value="TT">Trinidad and Tobago</option>
-										<option value="TN">Tunisia</option>
-										<option value="TR">Turkey</option>
-										<option value="TM">Turkmenistan</option>
-										<option value="TC">Turks and Caicos Islands</option>
-										<option value="TV">Tuvalu</option>
-										<option value="UG">Uganda</option>
-										<option value="UA">Ukraine</option>
-										<option value="AE">United Arab Emirates</option>
-										<option value="GB">United Kingdom (UK)</option>
-										<option value="US" selected='selected'>United States (US)</option>
-										<option value="ZM">Zambia</option>
-										<option value="ZW">Zimbabwe</option>
 									</select>                 
 									</div>
                 </div>

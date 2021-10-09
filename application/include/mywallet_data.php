@@ -16,7 +16,7 @@ $pupdate = $get_check['pupdate'];
 	<?php echo ($pdelete == '1') ? '<button type="submit" class="btn btn-flat btn-danger" name="delete"><i class="fa fa-times"></i>&nbsp;Apagar Multiplos</button>' : ''; ?>
 	<?php echo ($pupdate == '1') ? '<button data-target= "#c" data-toggle="modal" type="button" class="btn btn-flat btn-info"><i class="fa fa-dollar"></i>&nbsp;Transferencia</button>' : ''; ?>
 	<?php echo ($pcreate == '1') ? '<button data-target= "#b" data-toggle="modal" type="button" class="btn btn-flat btn-success"><i class="fa fa-plus"></i>&nbsp;Adicionar carteira</button>' : ''; ?>
-	<button type="button" class="btn btn-flat btn-info" disabled>&nbsp;Total de Carteiras:&nbsp;
+	<button type="button" class="btn btn-flat btn-info" disabled>&nbsp;Total de Plafond:&nbsp;
 <strong class="alert alert-success">
 <?php
 $tid = $_SESSION['tid'];
@@ -46,11 +46,10 @@ echo $currency.number_format($row['Total'],2,".",",")."</b>";
                 <thead>
                 <tr>
                   <th><input type="checkbox" id="select_all"/></th>
-                  <th>ID</th>
-                  <th>Valor</th>
+                  <th>Valor inicial</th>
 				  <th>Descriçao</th>
-                  <th>Tipo de Emprestimo</th>
-                  <th>Dia de Transaç</th>
+                  <th>Tipo Movimento</th>
+                  <th>Ultima Transaç</th>
                   <th>Acçao</th>
                  </tr>
                 </thead>

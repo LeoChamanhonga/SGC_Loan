@@ -37,12 +37,12 @@ $num = mysqli_num_rows($select);
                   <th>Descriçao</th>
                   <th>valor</th>
                   <th>Saldo</th>
-                  <th>Cliente/th>
+                  <th>Cliente</th>
 				  <th>Gestor</th>
                   <th>Aprovado por</th>
                   <th>Adjud data</th>
                   <th>Dia pagmaneto</th>
-                  <th>Estado de aprovacao</th>
+                  <th>Estado de aprovaçao</th>
 				  <th>Actualizar estado</th>
                   <th>Acçao</th>
                  </tr>
@@ -52,7 +52,7 @@ $num = mysqli_num_rows($select);
 $select = mysqli_query($link, "SELECT * FROM loan_info") or die (mysqli_error($link));
 if(mysqli_num_rows($select)==0)
 {
-echo "<div class='alert alert-info'>No data found yet!.....Check back later!!</div>";
+echo "<div class='alert alert-info'>Sem Dados!!</div>";
 }
 else{
 while($row = mysqli_fetch_array($select))
@@ -103,7 +103,7 @@ else{
 ?>
 				<tr>
 				<td><input id="optionsCheckbox" class="checkbox" name="selector[]" type="checkbox" value="<?php echo $row['id']; ?>"></td>
-                <td><?php echo "Flexible"; ?></td>
+                <td><?php echo "Tipo Emp"; ?></td>
 				<td><?php echo $row['baccount']; ?></td>
 				<td><?php echo $row['desc']; ?></td>
                 <td><?php echo $row['amount']; ?></td>
@@ -138,14 +138,14 @@ while($gete = mysqli_fetch_array($se))
 							$id=$_POST['selector'];
 							$N = count($id);
 						if($id == ''){
-						echo "<script>alert('Row Not Selected!!!'); </script>";	
+						echo "<script>alert('Linha nao Selecionada!!!'); </script>";	
 						echo "<script>window.location='listloans.php?id=".$_SESSION['tid']."'; </script>";
 							}
 							else{
 							for($i=0; $i < $N; $i++)
 							{
 								$result = mysqli_query($link,"DELETE FROM loan_info WHERE id ='$id[$i]'");
-								echo "<script>alert('Row Delete Successfully!!!'); </script>";
+								echo "<script>alert('Linha deletada!!!'); </script>";
 								echo "<script>window.location='listloans.php?id=".$_SESSION['tid']."'; </script>";
 							}
 							}
