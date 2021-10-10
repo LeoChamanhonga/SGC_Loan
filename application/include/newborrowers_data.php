@@ -1,4 +1,4 @@
-<?php include_once '../../config/connect.php'; ?>
+<?php /*include_once 'config/connect.php'; */?>
 <div class="box">
 	       <div class="box-body">
 			<div class="panel panel-success">
