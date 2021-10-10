@@ -32,7 +32,7 @@ echo $currency.number_format($row['Total'],2,".",",")."</b>";
 }
 }
 ?>			</h4>
-              <p>Minha Carteira</p>
+              <p>Carteira de Credito</p>
             </div>
             <div class="icon"><img height="80" width="80" src="../img/ass.png">
               <i class=""></i>

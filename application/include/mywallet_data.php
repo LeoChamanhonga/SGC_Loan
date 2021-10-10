@@ -15,12 +15,14 @@ $pupdate = $get_check['pupdate'];
 ?>
 	<?php echo ($pdelete == '1') ? '<button type="submit" class="btn btn-flat btn-danger" name="delete"><i class="fa fa-times"></i>&nbsp;Apagar Multiplos</button>' : ''; ?>
 	<?php echo ($pupdate == '1') ? '<button data-target= "#c" data-toggle="modal" type="button" class="btn btn-flat btn-info"><i class="fa fa-dollar"></i>&nbsp;Transferencia</button>' : ''; ?>
-	<?php echo ($pcreate == '1') ? '<button data-target= "#b" data-toggle="modal" type="button" class="btn btn-flat btn-success"><i class="fa fa-plus"></i>&nbsp;Adicionar carteira</button>' : ''; ?>
-	<button type="button" class="btn btn-flat btn-info" disabled>&nbsp;Total de Plafond:&nbsp;
+	<?php echo ($pcreate == '1') ? '<button data-target= "#b" data-toggle="modal" type="button" class="btn btn-flat btn-success"><i class="fa fa-plus"></i>&nbsp;Tipo de Credito</button>' : ''; ?>
+	<button type="button" class="btn btn-flat btn-info" disabled>&nbsp;Total de Movimentos:&nbsp;
 <strong class="alert alert-success">
 <?php
 $tid = $_SESSION['tid'];
+//$select = mysqli_query($link, "SELECT Total FROM twallet WHERE tid") or die (mysqli_error($link))
 $select = mysqli_query($link, "SELECT Total FROM twallet WHERE tid = '$tid'") or die (mysqli_error($link));
+
 if(mysqli_num_rows($select)==0)
 {
 echo "0.00";
@@ -46,6 +48,7 @@ echo $currency.number_format($row['Total'],2,".",",")."</b>";
                 <thead>
                 <tr>
                   <th><input type="checkbox" id="select_all"/></th>
+				  <th>Nº</th>
                   <th>Valor inicial</th>
 				  <th>Descriçao</th>
                   <th>Tipo Movimento</th>
@@ -94,18 +97,19 @@ else{
                 </table>  
 			
 <?php
-						if(isset($_POST['delete'])){
-						$idm = $_GET['id'];
-							$id=$_POST['selector'];
-							$N = count($id);
-						if($id == ''){
-						echo "<script>alert('Nenhuma Linha selecionada!!!'); </script>";	
-						echo "<script>window.location='mywallet.php?id=".$_SESSION['tid']."'; </script>";
-							}
-							else{
-							for($i=0; $i < $N; $i++)
-							{
-								$result = mysqli_query($link,"DELETE FROM mywallet WHERE id ='$id[$i]'");
+		if(isset($_POST['delete'])){
+			$idm = $_GET['id'];
+			$id=$_POST['selector'];
+			$N = count($id);
+				if($id == ''){
+					echo "<script>alert('Nenhuma Linha selecionada!!!'); </script>";	
+					echo "<script>window.location='mywallet.php?id=".$_SESSION['tid']."'; </script>";
+				}
+				else{
+					for($i=0; $i < $N; $i++)
+						{
+							$result = mysqli_query($link,"DELETE FROM mywallet WHERE id ='$id[$i]'");
+							$result = mysqli_query($link,"DELETE FROM twallet WHERE tid = '$tid'");
 								echo "<script>alert('Linha deletada!!!'); </script>";
 								echo "<script>window.location='mywallet.php?id=".$_SESSION['tid']."'; </script>";
 							}

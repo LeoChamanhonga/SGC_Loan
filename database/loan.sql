@@ -163,11 +163,22 @@ INSERT INTO `battachment` (`id`, `get_id`, `tid`, `attached_file`, `date_time`) 
 --
 -- Table structure for table `borrowers`
 --
-
-CREATE TABLE IF NOT EXISTS `borrowers` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+--CREATE TABLE IF NOT EXISTS `borrowers` (
+CREATE TABLE `borrowers` (
+  `id` int(11) NOT NULL,
   `fname` varchar(200) NOT NULL,
   `lname` varchar(200) NOT NULL,
+  `data_nascimento` date NOT NULL,
+  `sexo` varchar(15) NOT NULL,
+  `naturalidade` varchar(50) NOT NULL,
+  `filiacao` varchar(255) NOT NULL,
+  `estado_civil` varchar(20) NOT NULL,
+  `residencia` varchar(255) NOT NULL,
+  `documento` varchar(20) NOT NULL,
+  `numero_documento` varchar(25) NOT NULL,
+  `emissao` date NOT NULL,
+  `validade` date NOT NULL,
+  `localEmit` varchar(255) NOT NULL,
   `email` varchar(200) NOT NULL,
   `phone` varchar(200) NOT NULL,
   `addrs1` text NOT NULL,
@@ -181,16 +192,16 @@ CREATE TABLE IF NOT EXISTS `borrowers` (
   `balance` varchar(200) NOT NULL,
   `image` varchar(200) NOT NULL,
   `date_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `status` varchar(200) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+  `status` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=6;
+--) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `borrowers`
 --
 
-INSERT INTO `borrowers` (`id`, `fname`, `lname`, `email`, `phone`, `addrs1`, `addrs2`, `city`, `state`, `zip`, `country`, `comment`, `account`, `balance`, `image`, `date_time`, `status`) VALUES
-(5, 'Ayodeji', 'Akinade', 'business2016@gmail.com', '08033527716', 'FCE', 'Abeokuta', 'Ikeja', 'Lagos', '110001', 'US', 'Application for loan', '0034445657', '1451.00', 'img/user3.png', '2018-01-06 18:26:11', 'Pending');
+_--INSERT INTO `borrowers` (`id`, `fname`, `lname`, `email`, `phone`, `addrs1`, `addrs2`, `city`, `state`, `zip`, `country`, `comment`, `account`, `balance`, `image`, `date_time`, `status`) VALUES
+---(5, 'Ayodeji', 'Akinade', 'business2016@gmail.com', '08033527716', 'FCE', 'Abeokuta', 'Ikeja', 'Lagos', '110001', 'US', 'Application for loan', '0034445657', '1451.00', 'img/user3.png', '2018-01-06 18:26:11', 'Pending');
 
 -- --------------------------------------------------------
 

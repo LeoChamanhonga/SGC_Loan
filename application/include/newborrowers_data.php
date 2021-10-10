@@ -94,7 +94,7 @@ echo "<div class='alert alert-success'>Mutuario Criado Com Sucesso!</div>";
 			<div class="form-group">
             <label for="" class="col-sm-2 control-label">Sua Imagem</label>
 				<div class="col-sm-10">
-  		  			<input type='file' name="image" onChange="readURL(this);" /required>
+  		  			<input type='file' name="image" onChange="readURL(this);" >
        				 <img id="blah"  src="../avtar/user2.png" alt="Image Here" height="100" width="100"/>
 				</div>
 			</div>
@@ -103,7 +103,7 @@ echo "<div class='alert alert-success'>Mutuario Criado Com Sucesso!</div>";
                 <label for="" class="col-sm-2 control-label" style="color:#009900">Numero de Conta</label>
             <div class="col-sm-10">
 <?php
-$account = '013'.rand(1000000,10000000);
+$account = '011'.rand(1000000,10000000);
 ?>
                   <input name="account" type="text" class="form-control" value="<?php echo $account; ?>" placeholder="Numero de Conta" readonly>
                   </div>
@@ -122,20 +122,20 @@ $account = '013'.rand(1000000,10000000);
                   <input name="lname" type="text" class="form-control" placeholder="Apelido" required>
                   </div>
                   </div>
-				  <div class="form-group">
+				    <div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Data de Nascimento</label>
                 <div class="col-sm-10">
                   <input name="data_nascimento" type="date" class="form-control" placeholder="Data de Nascimento" required>
                 </div>
             </div>
             <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Sexo</label>
-                <div class="col-sm-10">
-                  <select name="sexo" class="form-control">
-                  	<option value="Masculino" selected="">Masculino</option>
-                  	<option value="Femenino">Femenino</option>
-                  </select>
-                </div>
+                <label for="" class="col-sm-2 control-label" style="color:#009900">Sexo</label>
+              <div class="col-sm-10">
+                <select name="sexo" class="form-control">
+                  <option value="Masculino" selected="">Masculino</option>
+              	  <option value="Femenino">Femenino</option>
+                </select>
+              </div>
             </div>
 			<div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Naturalidade</label>
@@ -195,121 +195,8 @@ $account = '013'.rand(1000000,10000000);
                 <div class="col-sm-10">
                   <input name="localEmit" type="text" class="form-control" placeholder="Local de Emissao" required>
                 </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Sexo</label>
-                <div class="col-sm-10">
-                  <select name="sexo" class="form-control">
-                  	<option value="Masculino" selected="">Masculino</option>
-                  	<option value="Femenino">Femenino</option>
-                  </select>
-                </div>
             </div>
-			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Naturalidade</label>
-                <div class="col-sm-10">
-                  <input name="naturalidade" type="text" class="form-control" placeholder="Naturalidade" required>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Filiacao</label>
-                <div class="col-sm-10">
-                  <input name="filiacao" type="text" class="form-control" placeholder="Nomes do pai e da mae" required>
-                </div>
-            </div> 
-             <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Estado Civil</label>
-                <div class="col-sm-10">
-                  <input name="estado_civil" type="text" class="form-control" placeholder="Estado Civil" required>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Local de Residencia</label>
-                <div class="col-sm-10">
-                  <input name="residencia" type="text" class="form-control" placeholder="Residencia" required>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Documento</label>
-                <div class="col-sm-10">
-                  <select name="documento" class="form-control">
-                  	<option value="BI" selected="">BI</option>
-                  	<option value="Carta de Conducao" selected="">Carta de Conducao</option>
-                  	<option value="Passaporte" selected="">Passaporte</option>
-                  	<option value="Cartao de Eleitor">Cartao de Eleitor</option>
-                  </select>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Numero do Documento</label>
-                <div class="col-sm-10">
-                  <input name="numero_documento" type="text" class="form-control" placeholder="Numero" required>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Data da Emissao</label>
-                <div class="col-sm-10">
-                  <input name="emissao" type="date" class="form-control" placeholder="Data da Emissao" required>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Validade</label>
-                <div class="col-sm-10">
-                  <input name="validade" type="date" class="form-control" placeholder="Validade" required>
-                </div>
-            </div>
-            <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Local de Emissao</label>
-                <div class="col-sm-10">
-                  <input name="localEmit" type="text" class="form-control" placeholder="Local de Emissao" required>
-                </div>
-            </div>  
-		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Email</label>
-                  <div class="col-sm-10">
-                  <input type="email" name="email" type="text" class="form-control" placeholder="Email">
-                  </div>
-                  </div>
-				  
-		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Telemovel</label>
-                  <div class="col-sm-10">
-                  <input name="phone" type="text" class="form-control" placeholder="Mobile Number" required>
-                  </div>
-                  </div>
-				  
-				  
-		 <div class="form-group">
-                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Endereço 1</label>
-                  	<div class="col-sm-10"><textarea name="addrs1"  class="form-control" rows="4" cols="80"></textarea></div>
-          </div>
-					
-			<div class="form-group">
-                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Endereço 2</label>
-                  	<div class="col-sm-10"><textarea name="addrs2"  class="form-control" rows="4" cols="80"></textarea></div>
-          	</div>
-			
-			
-			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Cidade</label>
-                  <div class="col-sm-10">
-                  <input name="city" type="text" class="form-control" placeholder="Cidade"required >
-                  </div>
-                  </div>
-				  
-		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Provincia</label>
-                  <div class="col-sm-10">
-                  <input name="state" type="text" class="form-control" placeholder="Provincia" required>
-                  </div>
-                  </div>
-				  
-				  <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Codigo</label>
-                  <div class="col-sm-10">
-                  <input name="zip" type="text" class="form-control" placeholder="Codigo" >
-                  </div>
-                  </div>
-				  
+ 
 		<div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Provincia</label>
                 <div class="col-sm-10">

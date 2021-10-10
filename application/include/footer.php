@@ -1,7 +1,7 @@
 <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Versão</b> 2.4.3
+      <b>Versão</b> 1.0.0
     </div>
 	<?php $sql = "SELECT footer FROM systemset";
 		$result = mysqli_query($link,$sql);

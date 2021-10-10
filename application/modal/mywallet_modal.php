@@ -6,22 +6,22 @@
 	  <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-         <strong> <h4 class="modal-title" align="center">Inserir na carteira</h4></strong></div>
+         <strong> <h4 class="modal-title" align="center">Inserir Tipo de Credito</h4></strong></div>
         <div class="modal-body">
 		    <form class="form-horizontal" method="post" enctype="multipart/form-data">
 			 <div class="box-body">
 			
 			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Valor</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Total Plafond</label>
                   <div class="col-sm-10">
-                  <input name="amt" type="number" class="form-control" placeholder="Amount" required>
+                  <input name="amt" type="number" class="form-control" placeholder="Valor Total" required>
                   </div>
                   </div>
 				  
 				   <div class="form-group">
                   	<label for="" class="col-sm-2 control-label" style="color:#009900">Descriçao</label>
                   	<div class="col-sm-10">
-					<textarea name="desc"  class="form-control" rows="4" cols="80"></textarea>
+					<textarea name="desc"  class="form-control" rows="4" cols="80" placeholder="descreva o tipo de aplicacao"></textarea>
            		</div>
 				</div>
 				

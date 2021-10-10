@@ -30,7 +30,7 @@ while($rows = mysqli_fetch_array($select))
 			</div>
 			
 			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Full Name</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Nome Completo</label>
                   <div class="col-sm-10">
                   <input name="name" type="text" class="form-control" value="<?php echo $rows['name']; ?>" required>
                   </div>
@@ -45,48 +45,41 @@ while($rows = mysqli_fetch_array($select))
                   </div>
 				  
 		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Mobile Number</label>
+                  <label for="" class="col-sm-2 control-label" style="color:#009900">Numero de Telemovel</label>
                   <div class="col-sm-10">
                   <input name="phone" type="text" class="form-control" value="<?php echo $rows['phone']; ?>" required>
                   </div>
                   </div>
 				  
 				  
-		 <div class="form-group">
+		  <div class="form-group">
                   	<label for="" class="col-sm-2 control-label" style="color:#009900">Address 1</label>
                   	<div class="col-sm-10">
 					<textarea name="addr1"  class="form-control" rows="4" cols="80" required><?php echo $rows['addr1']; ?></textarea>
            			 </div>
           </div>
 					
-			<div class="form-group">
-                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Address 2</label>
-                  	<div class="col-sm-10">
-					<textarea name="addr2"  class="form-control" rows="4" cols="80" ><?php echo $rows['addr2']; ?></textarea>
-           			 </div>
-          	</div>
-			
-			
+		
 			<div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">City</label>
                   <div class="col-sm-10">
                   <input name="city" type="text" class="form-control" value="<?php echo $rows['city']; ?>" required >
                   </div>
-                  </div>
+            </div>
 				  
-		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">State</label>
+		    <div class="form-group">
+            	<label for="" class="col-sm-2 control-label" style="color:#009900">State</label>
                   <div class="col-sm-10">
-                  <input name="state" type="text" class="form-control" value="<?php echo $rows['state']; ?>" required>
+                  	<input name="state" type="text" class="form-control" value="<?php echo $rows['state']; ?>" required>
                   </div>
-                  </div>
+            </div>
 				  
-				  <div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Zip Code</label>
+			<div class="form-group">
+                <label for="" class="col-sm-2 control-label" style="color:#009900">Zip Code</label>
                   <div class="col-sm-10">
-                  <input name="zip" type="text" class="form-control" value="<?php echo $rows['zip']; ?>" required>
+                  	<input name="zip" type="text" class="form-control" value="<?php echo $rows['zip']; ?>" required>
                   </div>
-                  </div>
+            </div>
 				  
 		<div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Country</label>

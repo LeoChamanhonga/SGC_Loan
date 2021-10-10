@@ -51,8 +51,13 @@
                 <label for="" class="col-sm-2 control-label" style="color:#009900">Tipo de Credito</label>
             <div class="col-sm-10">
 				<select name="country"  class="form-control" required>
-					<option value = "FAE">FAE</option>
-					<option value="CAVAS">CAVAS</option>
+				<?php
+				$getin = mysqli_query($link, "SELECT * FROM mywallet order by id") or die (mysqli_error($link));
+				while($row = mysqli_fetch_array($getin))
+				{
+				echo '<option value="'.$row['id'].'">'.$row['Desc'].'</option>';
+				}
+				?>
 				</select>
 		    </div>
 		</div>
@@ -157,7 +162,7 @@ while($row = mysqli_fetch_array($sele))
 <div class="alert-danger">&nbsp;INFO DE PAGAMENTO</div>
 <hr>	
 					
-					 <div class="form-group">
+				<div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Saldo Actual</label>
                   <div class="col-sm-10">
                   <input name="user" type="text" class="form-control" value="0.00" readonly>
