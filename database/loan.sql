@@ -25,6 +25,14 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `aboutus`
 --
+CREATE TABLE IF NOT EXISTS `city` (
+  `idcity` INT NOT NULL,
+  `citydesc` VARCHAR(100) NULL,
+  PRIMARY KEY (`idcity`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+
 
 CREATE TABLE IF NOT EXISTS `aboutus` (
   `abid` int(11) NOT NULL AUTO_INCREMENT,
