@@ -49,7 +49,7 @@ echo $currency.number_format($row['Total'],2,".",",")."</b>";
                 <tr>
                   <th><input type="checkbox" id="select_all"/></th>
 				  <th>Nº</th>
-                  <th>Valor inicial</th>
+                  <th>Budget do Periodo</th>
 				  <th>Descriçao</th>
                   <th>Tipo Movimento</th>
                   <th>Ultima Transaç</th>

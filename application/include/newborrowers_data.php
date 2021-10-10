@@ -196,33 +196,39 @@ $account = '011'.rand(1000000,10000000);
                   <input name="localEmit" type="text" class="form-control" placeholder="Local de Emissao" required>
                 </div>
             </div>
+
+        <div class="form-group">
+          <label for="" class="col-sm-2 control-label" style="color:#009900">Provincia</label>
+            <div class="col-sm-10">
+				      <select name="country"  class="form-control" required>
+				        <option value="">Selecione Pais&hellip;</option>
+                <?php
+                    $getin = mysqli_query($link, "SELECT * FROM countries order by id") or die (mysqli_error($link));
+                    while($row = mysqli_fetch_array($getin))
+                    {
+                    echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
+                    }
+                ?>
+				      </select>                 
+				   </div>
+         </div>
  
-		<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Provincia</label>
-                <div class="col-sm-10">
-				<select name="country"  class="form-control" required>
-										<option value="">Selecione Pais&hellip;</option>
-										<option value="AX">&#197;land Islands</option>
-										<option value="BB">Barbados</option>
-										<option value="BY">Belarus</option>
-										<option value="MZ">Moçambique</option>
-										<option value="MM">Myanmar</option>
-										<option value="NA">Namibia</option>
-										<option value="NR">Nauru</option>
-										<option value="NP">Nepal</option>
-										<option value="NL">Netherlands</option>
-										<option value="AN">Netherlands Antilles</option>
-										<option value="NC">New Caledonia</option>
-										<option value="NZ">New Zealand</option>
-										<option value="NI">Nicaragua</option>
-										<option value="NE">Niger</option>
-										<option value="Nigeria">Nigeria</option>
-										<option value="NU">Niue</option>
-										<option value="NF">Norfolk Island</option>
-										<option value="KP">North Korea</option>
-									</select>                 
-									</div>
-                </div>
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label" style="color:#009900">Provincia</label>
+              <div class="col-sm-10">
+                <select name="country"  class="form-control" required>
+                <option value="">Selecione Distrito&hellip;</option>
+                <?php
+                    $getin = mysqli_query($link, "SELECT * FROM city order by idcity") or die (mysqli_error($link));
+                    while($row = mysqli_fetch_array($getin))
+                    {
+                    echo '<option value="'.$row['id'].'">'.$row['citydesc'].'</option>';
+                    }
+                ?>
+                    
+                </select>                 
+              </div>
+          </div>
 									 
 									 
 				<div class="form-group">

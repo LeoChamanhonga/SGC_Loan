@@ -12,18 +12,18 @@
 			 <div class="box-body">
 			
 			<div class="form-group">
-                  <label for="" class="col-sm-2 control-label" style="color:#009900">Total Plafond</label>
-                  <div class="col-sm-10">
-                  <input name="amt" type="number" class="form-control" placeholder="Valor Total" required>
-                  </div>
-                  </div>
+            	<label for="" class="col-sm-2 control-label" style="color:#009900">Total Plafond</label>
+					<div class="col-sm-10">
+						<input name="amt" type="number" class="form-control" placeholder="Valor dispoviel para desembolsar">
+					</div>
+            </div>
 				  
-				   <div class="form-group">
-                  	<label for="" class="col-sm-2 control-label" style="color:#009900">Descriçao</label>
-                  	<div class="col-sm-10">
+			<div class="form-group">
+                <label for="" class="col-sm-2 control-label" style="color:#009900">Descriçao</label>
+					<div class="col-sm-10">
 					<textarea name="desc"  class="form-control" rows="4" cols="80" placeholder="descreva o tipo de aplicacao"></textarea>
-           		</div>
-				</div>
+					</div>
+			</div>
 				
 				<div class="form-group">
                   <label for="" class="col-sm-2 control-label" style="color:#009900">Tipo de Carteira</label>
@@ -252,11 +252,11 @@ $tdate = $row['tdate'];
 	  <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" style=" color:#FFFFFF">&times;</button>
-         <strong> <h4 class="modal-title" style="color:#FFFFFF"align="center">Delete Confirmation</h4></strong>
+         <strong> <h4 class="modal-title" style="color:#FFFFFF"align="center">Confirmar</h4></strong>
         </div>
         <div class="modal-body">
 		  
-			<div align="center" style="color: #FFFFFF"<strong>Are you sure you want to delete the row selected&nbsp;?</strong></div>
+			<div align="center" style="color: #FFFFFF"<strong>Tem Certeza que pretende deletar&nbsp;?</strong></div>
 		<hr>
   		 <a href="del_wallet.php?id=<?php echo $id; ?>"><button type="button" class="btn btn-info btn-flat  btn-outline" ><i class="fa fa-trash"></i>Yes</button></a>
 		<button type="button" class="btn btn-danger btn-flat btn-outline" data-dismiss="modal">No</button>
