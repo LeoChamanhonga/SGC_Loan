@@ -10,7 +10,7 @@
 	<!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        New Loans
+        Novo Emprestimo
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">

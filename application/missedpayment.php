@@ -10,13 +10,13 @@
 	<!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-         List of Missed Payments 
+         Pagamentos em Atrazo
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active"> <a href="missedpayment.php?id=<?php echo $_SESSION['tid']; ?>">List Payment</a></li>
-        <li class="active">List</li>
+        <li class="active"> <a href="missedpayment.php?id=<?php echo $_SESSION['tid']; ?>">Lista de Pagamentos</a></li>
+        <li class="active">Lista</li>
       </ol>
     </section>
     <section class="content">

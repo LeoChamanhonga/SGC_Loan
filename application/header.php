@@ -8,7 +8,7 @@
 $call = mysqli_query($link, "SELECT * FROM systemset");
 if(mysqli_num_rows($call) == 0)
 {
-echo "<script>alert('Data Not Found!'); </script>";
+echo "<script>alert('Dados nao encontrados!'); </script>";
 }
 else
 {
@@ -48,6 +48,9 @@ while($row = mysqli_fetch_assoc($call)){
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 <link rel="stylesheet" href="../dist/css/style.css" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="../dist/js/calendar.js"></script>
     <strong> <link rel="stylesheet" href="../plugins/datatables/dataTables.bootstrap.css"></strong>
@@ -290,3 +293,4 @@ $(".loan").html(html);
 </script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
+    </body></html>

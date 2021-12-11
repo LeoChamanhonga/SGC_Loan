@@ -1,4 +1,5 @@
-<?php include("include/header.php"); ?>
+<?php
+include("include/header.php"); ?>
 <div class="wrapper">
 
 <?php include("include/top_bar.php"); ?>
@@ -14,7 +15,7 @@
         <small>Painel de Control</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="dashboard.php<?php echo $_SESSION['tid']; ?>"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
       </ol>
     </section>
@@ -28,3 +29,5 @@
 </div>
 		
 <?php include("include/footer.php"); ?>
+
+</div>

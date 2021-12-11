@@ -10,13 +10,13 @@
 	<!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Permissão sobre modulos
+        Permissoes sobre modulos
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>&&mid=<?php echo base64_encode("401"); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active"> <a href="permission_list.php?id=<?php echo $_SESSION['tid']; ?>&&mid=<?php echo base64_encode("413"); ?>">Permissão</a></li>
-        <li class="active">List</li>
+        <li class="active"> <a href="permission_list.php?id=<?php echo $_SESSION['tid']; ?>&&mid=<?php echo base64_encode("413"); ?>">Permissoes</a></li>
+        <li class="active">Lista</li>
       </ol>
     </section>
     <section class="content">

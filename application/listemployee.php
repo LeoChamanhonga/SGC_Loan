@@ -10,12 +10,12 @@
 	<!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        List of Employees
+        Lista de Utilizadores
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="dashboard.php?id=<?php echo $_SESSION['tid']; ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active"> <a href="newpayments.php?id=<?php echo $_SESSION['tid']; ?>">Employees</a></li>
+        <li class="active"> <a href="newpayments.php?id=<?php echo $_SESSION['tid']; ?>">Utilizadores</a></li>
         <li class="active">List</li>
       </ol>
     </section>
