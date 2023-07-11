@@ -1,1 +1,1 @@
-<?php $link = mysqli_connect('localhost','root','','loan') or die('Unable to Connect to Database'); ?>
+<?php $link = mysqli_connect('localhost','root','','loan') or die('Impossivel Ligar a DB); ?>
